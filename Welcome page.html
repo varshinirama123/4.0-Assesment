@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('bg-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      h1 {
+        font-size: 80px;
+        color: black;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      .next-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: white;
+        color: green;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      .next-button:hover {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Industry4.0 Readiness Assessment</h1>
+    </div>
+    <form action="page2.html" class="next-button">
+      <input type="submit" value="Next">
+    </form>
+  </body>
+</html>

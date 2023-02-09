@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <script type="text/javascript" src="storage.js"></script> -->
+    <style>
+        .main_div{
+            border: 1px solid yellow;
+            transform: translateY(-300px);
+        }
+        #one1 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-242px);
+        margin-left: 229px;
+        }
+        #two1 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-293px);
+            margin-left: 231px;
+        }
+        #three1 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-355px);
+            margin-left: 230px;
+        }
+        #four1 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-405px);
+            margin-left: 231px;
+        }
+
+        #one2 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-239px);
+            margin-left: 285px;
+        }
+        #two2 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-263px);
+            margin-left: 328px;
+        }
+        #three2 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-295px);
+            margin-left: 378px;
+        }
+        #four2 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-319px);
+            margin-left: 421px;
+        }
+
+        #one3 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-210px);
+            margin-left: 264px;
+        }
+        #two3 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-187px);
+            margin-left: 291px;
+        }
+        #three3 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-173px);
+            margin-left: 322px;
+        }
+        #four3 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-155px);
+            margin-left: 349px;
+        }
+
+        #one4 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-250px);
+            margin-left: 193px;
+        }
+        #two4 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-227px);
+            margin-left: 171px;
+        }
+        #three4 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-213px);
+            margin-left: 139px;
+        }
+        #four4 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-195px);
+            margin-left: 113px;
+        }
+
+        #one5 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-359px);
+            margin-left: 172px;
+        }
+        #two5 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-382px);
+            margin-left: 134px;
+        }
+        #three5 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-414px);
+            margin-left: 83px;
+        }
+        #four5 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-439px);
+            margin-left: 41px;
+        }
+    </style>
+    
+
+    
+</head>
+<body>
+
+       <div style = 'margin-bottom:40px;'>
+            <input type="button" value="Back" action="page3.html" class="back-button" onclick="window.history.back()">
+       </div>
+
+       <div class="flex-container" >
+        
+        <div style="display:inline-block;width:49%;"class="flex-child">
+            <h2 style="display:inline-block;width:49%;">Products and services</h2>
+
+            <form id="product-customisation">
+                <fieldset>
+                    <legend>1. Product customisation</legend>
+                    <label onclick="q11()"><input type="radio" name="Customisation" value="1"> Product allows for no individualisation, standardised mass production</label><br>
+                    <label onclick="q21()"><input type="radio" name="Customisation" value="2"> Majority of products are made in large batch sizes with limited late differentiation</label><br>
+                    <label onclick="q31()"><input type="radio" name="Customisation" value="3"> Products can be largely customised but still have standardised base</label><br>
+                    <label onclick="q41()"><input type="radio" name="Customisation" value="4"> Late differentiation available for most maketo-order products (batch size 1)</label><br>
+                </fieldset>
+                
+            </form>
+            
+            <form id="Digital-features">
+                <fieldset >
+                    <legend>2. Digital features of products</legend>
+                    <label onclick="q12()"><input type="radio" name="Digital features" value="1"> Products show only physical value</label><br>
+                    <label onclick="q22()"><input type="radio" name="Digital features" value="2"> Products show value only from intellectual property licensing</label><br>
+                    <label onclick="q32()"><input type="radio" name="Digital features" value="3"> Products exhibit some digital features and value from intellectual property licensing</label><br>
+                    <label onclick="q42()"><input type="radio" name="Digital features" value="4"> Products exhibit high digital features and value from intellectual property licensing</label><br>
+                </fieldset>
+                
+            </form>
+            
+            <form id="Data-driven">
+                <fieldset >
+                    <legend>3. Data-driven services</legend>
+                    <label onclick="q13()"><input type="radio" name="Data-driven services" value="1"> Data-driven services are offered without customer integration</label><br>
+                    <label onclick="q23()"><input type="radio" name="Data-driven services" value="2"> Data-driven services are offered with little customer integration</label><br>
+                    <label onclick="q33()"><input type="radio" name="Data-driven services" value="3"> Data-driven services are offered with customer integration</label><br>
+                    <label onclick="q43()"><input type="radio" name="Data-driven services" value="4"> Data-driven services are fully integrated with the customer</label><br>
+                </fieldset>
+                
+            </form>
+    
+            <form id="data-usage">
+                <fieldset >
+                    <legend>4. Level of product data usage</legend>
+                    <label onclick="q14()"><input type="radio" name="Data usage" value="1"> Data is not used</label><br>
+                    <label onclick="q24()"><input type="radio" name="Data usage" value="2"> 0-20% of collected data is used</label><br>
+                    <label onclick="q34()"><input type="radio" name="Data usage" value="3"> 20-50% of collected data is used</label><br>
+                    <label onclick="q44()"><input type="radio" name="Data usage" value="4"> More than 50% of collected data is used</label><br>
+                </fieldset>
+            </form>
+            
+            <form id="share-of-revenue">
+                <fieldset >
+                    <legend>5. Share of revenue</legend>
+                    <label onclick="q15()"><input type="radio" name="Revenue share" value="1"> Data-driven services account for an initial share of revenue (<2.5%)</label><br>
+                    <label onclick="q25()"><input type="radio" name="Revenue share" value="2"> Data-driven services account for a moderate share of revenue (2.5- 7.5%)</label><br>
+                    <label onclick="q35()"><input type="radio" name="Revenue share" value="3"> Data-driven services account for a significant share of revenue (7.5- 10%)</label><br>
+                    <label onclick="q45()"><input type="radio" name="Revenue share" value="4"> Data-driven services play an important role in revenue (>10%)</label><br>
+                </fieldset>
+                
+            </form> 
+           
+            <input  type="submit" value="Submit" onclick="return confirm('Are you sure?'),window.open('page5.html', '_blank'),saveData() ;" >
+        </div>
+
+        <div class="flex-child">
+             
+            
+            <div class="main_div"  style="width:65%; height:40%; margin-left: 120px;">
+                
+                <img id="img1" src="./images/pentagon.png" alt="">
+                <div id="one1"></div>
+                <div id="two1"></div>
+                <div id="three1"></div>
+                <div id="four1"></div>
+
+                <div id="one2"></div>
+                <div id="two2"></div>
+                <div id="three2"></div>
+                <div id="four2"></div>
+
+                <div id="one3"></div>
+                <div id="two3"></div>
+                <div id="three3"></div>
+                <div id="four3"></div>
+
+                <div id="one4"></div>
+                <div id="two4"></div>
+                <div id="three4"></div>
+                <div id="four4"></div>
+
+                <div id="one5"></div>
+                <div id="two5"></div>
+                <div id="three5"></div>
+                <div id="four5"></div>
+            </div>
+       </div>
+    
+
+
+
+        <!-- <script>
+            function saveData() {
+                
+              localStorage.clear();
+
+              localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+              localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
+              localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
+              localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
+              localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
+            }
+        </script> -->
+     
+</body>
+</html>
+<script>
+function saveData() {
+    localStorage.clear();
+    localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+    localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
+    localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
+    localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
+    localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
+}
+
+</script>
+
+<script>
+    function q11() {
+        var one1 = document.getElementById("one1").style.backgroundColor = "red"
+        var two1 = document.getElementById("two1").style.background = "none"
+        var three1 = document.getElementById("three1").style.background = "none"
+        var four1 = document.getElementById("four1").style.background = "none"
+    }
+    function q21() {
+        var one1 = document.getElementById("one1").style.background = "none"
+        var two1 = document.getElementById("two1").style.backgroundColor = "red"
+        var three1 = document.getElementById("three1").style.background = "none"
+        var four1 = document.getElementById("four1").style.background = "none"
+    }
+    function q31() {
+        var one1 = document.getElementById("one1").style.background = "none"
+        var two1 = document.getElementById("two1").style.background = "none"
+        var three1 = document.getElementById("three1").style.backgroundColor = "red"
+        var four1 = document.getElementById("four1").style.background = "none"
+    }
+    function q41() {
+        var one1 = document.getElementById("one1").style.background = "none"
+        var two1 = document.getElementById("two1").style.background = "none"
+        var three1 = document.getElementById("three1").style.background = "none"
+        var four1 = document.getElementById("four1").style.backgroundColor = "red"
+    }
+
+    function q12() {
+        var one2 = document.getElementById("one2").style.backgroundColor = "red"
+        var two2 = document.getElementById("two2").style.background = "none"
+        var three2 = document.getElementById("three2").style.background = "none"
+        var four2 = document.getElementById("four2").style.background = "none"
+    }
+    function q22() {
+        var one2 = document.getElementById("one2").style.background = "none"
+        var two2 = document.getElementById("two2").style.backgroundColor = "red"
+        var three2 = document.getElementById("three2").style.background = "none"
+        var four2 = document.getElementById("four2").style.background = "none"
+    }
+    function q32() {
+        var one2 = document.getElementById("one2").style.background = "none"
+        var two2 = document.getElementById("two2").style.background = "none"
+        var three2 = document.getElementById("three2").style.backgroundColor = "red"
+        var four2 = document.getElementById("four2").style.background = "none"
+    }
+    function q42() {
+        var one2 = document.getElementById("one2").style.background = "none"
+        var two2 = document.getElementById("two2").style.background = "none"
+        var three2 = document.getElementById("three2").style.background = "none"
+        var four2 = document.getElementById("four2").style.backgroundColor = "red"
+    }
+
+    function q13() {
+        var one3 = document.getElementById("one3").style.backgroundColor = "red"
+        var two3 = document.getElementById("two3").style.background = "none"
+        var three3 = document.getElementById("three3").style.background = "none"
+        var four3 = document.getElementById("four3").style.background = "none"
+    }
+    function q23() {
+        var one3 = document.getElementById("one3").style.background = "none"
+        var two3 = document.getElementById("two3").style.backgroundColor = "red"
+        var three3 = document.getElementById("three3").style.background = "none"
+        var four3 = document.getElementById("four3").style.background = "none"
+    }
+    function q33() {
+        var one3 = document.getElementById("one3").style.background = "none"
+        var two3 = document.getElementById("two3").style.background = "none"
+        var three3 = document.getElementById("three3").style.backgroundColor = "red"
+        var four3 = document.getElementById("four3").style.background = "none"
+    }
+    function q43() {
+        var one3 = document.getElementById("one3").style.background = "none"
+        var two3 = document.getElementById("two3").style.background = "none"
+        var three3 = document.getElementById("three3").style.background = "none"
+        var four3 = document.getElementById("four3").style.backgroundColor = "red"
+    }
+
+    function q14() {
+        var one4 = document.getElementById("one4").style.backgroundColor = "red"
+        var two4 = document.getElementById("two4").style.background = "none"
+        var three4 = document.getElementById("three4").style.background = "none"
+        var four4 = document.getElementById("four4").style.background = "none"
+    }
+    function q24() {
+        var one4 = document.getElementById("one4").style.background = "none"
+        var two4 = document.getElementById("two4").style.backgroundColor = "red"
+        var three4 = document.getElementById("three4").style.background = "none"
+        var four4 = document.getElementById("four4").style.background = "none"
+    }
+    function q34() {
+        var one4 = document.getElementById("one4").style.background = "none"
+        var two4 = document.getElementById("two4").style.background = "none"
+        var three4 = document.getElementById("three4").style.backgroundColor = "red"
+        var four4 = document.getElementById("four4").style.background = "none"
+    }
+    function q44() {
+        var one4 = document.getElementById("one4").style.background = "none"
+        var two4 = document.getElementById("two4").style.background = "none"
+        var three4 = document.getElementById("three4").style.background = "none"
+        var four4 = document.getElementById("four4").style.backgroundColor = "red"
+    }
+
+    function q15() {
+        var one5 = document.getElementById("one5").style.backgroundColor = "red"
+        var two5 = document.getElementById("two5").style.background = "none"
+        var three5 = document.getElementById("three5").style.background = "none"
+        var four5 = document.getElementById("four5").style.background = "none"
+    }
+    function q25() {
+        var one5 = document.getElementById("one5").style.background = "none"
+        var two5 = document.getElementById("two5").style.backgroundColor = "red"
+        var three5 = document.getElementById("three5").style.background = "none"
+        var four5 = document.getElementById("four5").style.background = "none"
+    }
+    function q35() {
+        var one5 = document.getElementById("one5").style.background = "none"
+        var two5 = document.getElementById("two5").style.background = "none"
+        var three5 = document.getElementById("three5").style.backgroundColor = "red"
+        var four5 = document.getElementById("four5").style.background = "none"
+    }
+    function q45() {
+        var one5 = document.getElementById("one5").style.background = "none"
+        var two5 = document.getElementById("two5").style.background = "none"
+        var three5 = document.getElementById("three5").style.background = "none"
+        var four5 = document.getElementById("four5").style.backgroundColor = "red"
+    }
+</script>
