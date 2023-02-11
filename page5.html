@@ -1,16 +1,851 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
-      h1 {
-        font-size: 20px;
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+        .main_div{
+            /* border: 1px solid yellow; */
+            transform: translateY(170px);
+        }
+        #one12 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-301px);
+        margin-left: 255px;
+        }
+        #two12 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-337px);
+            margin-left: 263px;
+        }
+        #three12 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-375px);
+            margin-left: 271px;
+        }
+        #four12 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-413px);
+            margin-left: 278px;
+        }
+
+        #one22 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-307px);
+            margin-left: 296px;
+        }
+        #two22 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-334px);
+            margin-left: 319px;
+        }
+        #three22 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-361px);
+            margin-left: 339px;
+        }
+        #four22 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-388px);
+            margin-left: 359px;
+        }
+
+        #one32 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-292px);
+            margin-left: 312px;
+        }
+        #two32 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-303px);
+            margin-left: 341px;
+        }
+        #three32 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-314px);
+            margin-left: 364px;
+        }
+        #four32 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-324px);
+            margin-left: 391px;
+        }
+
+        #one42 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-275px);
+            margin-left: 297px;
+        }
+        #two42 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-272px);
+            margin-left: 319px;
+        }
+        #three42 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-267px);
+            margin-left: 339px;
+        }
+        #four42 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-258px);
+            margin-left: 360px;
+        }
+
+        #one52 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-280px);
+            margin-left: 254px;
+        }
+        #two52 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-267px);
+            margin-left: 262px;
+        }
+        #three52 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-252px);
+            margin-left: 271px;
+        }
+        #four52 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-232px);
+            margin-left: 279px;
+        }
+
+        #one62 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-320px);
+        margin-left: 200px;
+        }
+        #two62 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-307px);
+            margin-left: 193px;
+        }
+        #three62 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-291px);
+            margin-left: 184px;
+        }
+        #four62 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-272px);
+            margin-left: 174px;
+        }
+
+        #one72 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-395px);
+        margin-left: 159px;
+        }
+        #two72 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-390px);
+            margin-left: 137px;
+        }
+        #three72 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-386px);
+            margin-left: 115px;
+        }
+        #four72 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-377px);
+            margin-left: 93px;
+        }
+
+        #one82 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-491px);
+        margin-left: 143px;
+        }
+        #two82 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-503px);
+            margin-left: 115px;
+        }
+        #three82 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-513px);
+            margin-left: 89px;
+        }
+        #four82 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-523px);
+            margin-left: 62px;
+        }
+
+        #one92 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-587px);
+        margin-left: 159px;
+        }
+        #two92 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-613px);
+            margin-left: 136px;
+        }
+        #three92 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-642px);
+            margin-left: 115px;
+        }
+        #four92 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-668px);
+            margin-left: 94px;
+        }
+
+        #one102 {
+        /* border: 1px solid red; */
+        /* background-color: aquamarine; */
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-661px);
+        margin-left: 201px;
+        }
+        #two102 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-697px);
+            margin-left: 192px;
+        }
+        #three102 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-736px);
+            margin-left: 184px;
+        }
+        #four102 {
+            /* border: 1px solid red; */
+            /* background-color: aquamarine; */
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-774px);
+            margin-left: 175px;
+        }
     </style>
-  </head>
-  <body>
-      <h1>Congratulations! You have completed the Assesment</h1>
-  </body>
+    
+
+    
+</head>
+<body>
+
+       <div style = 'margin-bottom:40px;'>
+            <input type="button" value="Back" action="Free Industry 4.0 Assesment.html" class="back-button" onclick="window.history.back()">
+       </div>
+
+       <div class="flex-container" >
+        
+        <div style="display:inline-block;width:49%;"class="flex-child">
+            <h2 style="display:inline-block;width:49%;">Manufacturing and operations</h2>
+
+            <form id="Automation">
+                <fieldset>
+                    <legend>1. Automation</legend>
+                    <label onclick="q112()"><input type="radio" name="Automation" value="1"> Few machines can be controlled through automation</label><br>
+                    <label onclick="q212()"><input type="radio" name="Automation" value="2"> Some machines and system infrastructures can be controlled through automation</label><br>
+                    <label onclick="q312()"><input type="radio" name="Automation" value="3"> Most machines and system infrastructures can be controlled through automation</label><br>
+                    <label onclick="q412()"><input type="radio" name="Automation" value="4"> Machines and systems can be controlled completely through automation</label><br>
+                </fieldset>
+                
+            </form>
+            
+            <form id="M2M">
+                <fieldset >
+                    <legend>2. Digital features of products</legend>
+                    <label onclick="q122()"><input type="radio" name="M2M" value="1"> Machines and systems have no M2M capability</label><br>
+                    <label onclick="q222()"><input type="radio" name="M2M" value="2"> Machines and systems are to some extent interoperable</label><br>
+                    <label onclick="q322()"><input type="radio" name="M2M" value="3"> Machines and systems are partially integrated</label><br>
+                    <label onclick="q422()"><input type="radio" name="M2M" value="4"> Machines and systems are fully integrated</label><br>
+                </fieldset>
+                
+            </form>
+            
+            <form id="readiness">
+                <fieldset >
+                    <legend>3. Equipment readiness for Industry 4</legend>
+                    <label onclick="q132()"><input type="radio" name="readiness" value="1"> Significant overhaul required to meet Industry 4 model</label><br>
+                    <label onclick="q232()"><input type="radio" name="readiness" value="2"> Some machines and systems can be upgraded</label><br>
+                    <label onclick="q332()"><input type="radio" name="readiness" value="3"> Machines already meet some of the requirements and can be upgraded where required</label><br>
+                    <label onclick="q432()"><input type="radio" name="readiness" value="4"> Machines and systems already meet all future requirements</label><br>
+                </fieldset>
+                
+            </form>
+    
+            <form id="Autonomous">
+                <fieldset >
+                    <legend>4. Autonomously guided workpieces</legend>
+                    <label onclick="q142()"><input type="radio" name="Autonomous" value="1"> Autonomously guided workpieces are not in use</label><br>
+                    <label onclick="q242()"><input type="radio" name="Autonomous" value="2"> Autonomously guided workpieces are not in use, but there are pilots underway</label><br>
+                    <label onclick="q342()"><input type="radio" name="Autonomous" value="3"> Autonomously guided workpieces used in selected areas</label><br>
+                    <label onclick="q442()"><input type="radio" name="Autonomous" value="4"> Machines and systems are fully integrated</label><br>
+                </fieldset>
+            </form>
+            
+            <form id="Self_optimising">
+                <fieldset >
+                    <legend>5. Self-optimisingprocesses</legend>
+                    <label onclick="q152()"><input type="radio" name="Self_optimising" value="1"> Self-optimisation processes are not in use</label><br>
+                    <label onclick="q252()"><input type="radio" name="Self_optimising" value="2"> Self-optimising processes are not in use, but there are pilots in more advanced areas of the business</label><br>
+                    <label onclick="q352()"><input type="radio" name="Self_optimising" value="3"> Self-optimising processes are used in selected areas</label><br>
+                    <label onclick="q452()"><input type="radio" name="Self_optimising" value="4"> Self-optimising processes are widely used</label><br>
+                </fieldset>
+            </form> 
+
+            <form id="Modelling">
+              <fieldset >
+                  <legend>6. Digital modelling</legend>
+                  <label onclick="q162()"><input type="radio" name="Modelling" value="1"> No digital modelling</label><br>
+                  <label onclick="q262()"><input type="radio" name="Modelling" value="2"> Some processes use digital modelling</label><br>
+                  <label onclick="q362()"><input type="radio" name="Modelling" value="3"> Most processes use digital modelling</label><br>
+                  <label onclick="q462()"><input type="radio" name="Modelling" value="4"> Complete digital modelling used for all relevant processes</label><br>
+              </fieldset>
+          </form>
+
+          <form id="Collection">
+            <fieldset >
+                <legend>7. Operations data collection</legend>
+                <label onclick="q172()"><input type="radio" name="Collection" value="1"> Data is collected manually when required, e.g. sampling for quality control</label><br>
+                <label onclick="q272()"><input type="radio" name="Collection" value="2"> Required data is collected digitally in certain areas</label><br>
+                <label onclick="q372()"><input type="radio" name="Collection" value="3"> Comprehensive digital data collection in multiple areas</label><br>
+                <label onclick="q472()"><input type="radio" name="Collection" value="4"> Comprehensive automated digital data collection across the entire process</label><br>
+            </fieldset>
+        </form>
+
+        <form id="Op_data_usage">
+          <fieldset >
+              <legend>8. Operations data usage</legend>
+              <label onclick="q182()"><input type="radio" name="Op_data_usage" value="1"> Data is only used for quality and regulatory purposes</label><br>
+              <label onclick="q282()"><input type="radio" name="Op_data_usage" value="2"> Some data is used to control processes</label><br>
+              <label onclick="q382()"><input type="radio" name="Op_data_usage" value="3"> Some data is used to control and optimise processes, e.g. predictive maintenance</label><br>
+              <label onclick="q482()"><input type="radio" name="Op_data_usage" value="4"> All data is used not only to optimise processes, but also for decision making</label><br>
+          </fieldset>
+      </form>
+
+      <form id="Solution_usage">
+        <fieldset >
+            <legend>9. Cloud solution usage</legend>
+            <label onclick="q192()"><input type="radio" name="Solution_usage" value="1"> Cloud solutions not in use</label><br>
+            <label onclick="q292()"><input type="radio" name="Solution_usage" value="2"> Initial solutions planned for cloud-based software, data storage and data analysis</label><br>
+            <label onclick="q392()"><input type="radio" name="Solution_usage" value="3"> Pilot solutions implemented in some areas of the business</label><br>
+            <label onclick="q492()"><input type="radio" name="Solution_usage" value="4"> Multiple solutions implemented across the business</label><br>
+        </fieldset>
+    </form>
+
+    <form id="IT">
+      <fieldset >
+          <legend>10. IT and data security</legend>
+          <label onclick="q1102()"><input type="radio" name="IT" value="1"> IT security solutions are planned</label><br>
+          <label onclick="q2102()"><input type="radio" name="IT" value="2"> IT security solutions have been partially implemented</label><br>
+          <label onclick="q3102()"><input type="radio" name="IT" value="3"> Comprehensive IT security solutions have been implemented with plans developed to close any gaps</label><br>
+          <label onclick="q4102()"><input type="radio" name="IT" value="4"> IT security solutions have been implemented for all relevant areas and are reviewed frequently to ensure compliance</label><br>
+      </fieldset>
+  </form>
+           
+            <input  type="submit" value="Next" onclick="window.location.replace('page6.html'),saveData2() ;" >
+        </div>
+
+        <div class="flex-child">
+             
+            
+            <div class="main_div"  style="width:65%; height:25%; margin-left: 120px;">
+                
+                <img id="img2" src="./images/Q2.png" alt="">
+                <div id="one12"></div>
+                <div id="two12"></div>
+                <div id="three12"></div>
+                <div id="four12"></div>
+
+                <div id="one22"></div>
+                <div id="two22"></div>
+                <div id="three22"></div>
+                <div id="four22"></div>
+
+                <div id="one32"></div>
+                <div id="two32"></div>
+                <div id="three32"></div>
+                <div id="four32"></div>
+
+                <div id="one42"></div>
+                <div id="two42"></div>
+                <div id="three42"></div>
+                <div id="four42"></div>
+
+                <div id="one52"></div>
+                <div id="two52"></div>
+                <div id="three52"></div>
+                <div id="four52"></div>
+
+                <div id="one62"></div>
+                <div id="two62"></div>
+                <div id="three62"></div>
+                <div id="four62"></div>
+
+                <div id="one72"></div>
+                <div id="two72"></div>
+                <div id="three72"></div>
+                <div id="four72"></div>
+
+                <div id="one82"></div>
+                <div id="two82"></div>
+                <div id="three82"></div>
+                <div id="four82"></div>
+
+                <div id="one92"></div>
+                <div id="two92"></div>
+                <div id="three92"></div>
+                <div id="four92"></div>
+
+                <div id="one102"></div>
+                <div id="two102"></div>
+                <div id="three102"></div>
+                <div id="four102"></div>
+            </div>
+       </div>
+    
+
+
+
+        <!-- <script>
+            function saveData2() {
+                
+              localStorage.clear();
+
+              localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+              localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
+              localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
+              localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
+              localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
+            }
+        </script> -->
+     
+</body>
 </html>
+<script>
+function saveData2() {
+    // localStorage.clear();
+    localStorage.setItem("Automation", document.querySelector('input[name="Automation"]:checked').value);
+    localStorage.setItem("M2M", document.querySelector('input[name="M2M"]:checked').value);
+    localStorage.setItem("readiness", document.querySelector('input[name="readiness"]:checked').value);
+    localStorage.setItem("Autonomous", document.querySelector('input[name="Autonomous"]:checked').value);
+    localStorage.setItem("Self_optimising", document.querySelector('input[name="Self_optimising"]:checked').value);
+    localStorage.setItem("Modelling", document.querySelector('input[name="Modelling"]:checked').value);
+    localStorage.setItem("Collection", document.querySelector('input[name="Collection"]:checked').value);
+    localStorage.setItem("Op_data_usage", document.querySelector('input[name="Op_data_usage"]:checked').value);
+    localStorage.setItem("Solution_usage", document.querySelector('input[name="Solution_usage"]:checked').value);
+    localStorage.setItem("IT", document.querySelector('input[name="IT"]:checked').value);
+}
+
+</script>
+
+<script>
+    function q112() {
+        var one12 = document.getElementById("one12").style.backgroundColor = "red"
+        var two12 = document.getElementById("two12").style.background = "none"
+        var three12 = document.getElementById("three12").style.background = "none"
+        var four12 = document.getElementById("four12").style.background = "none"
+    }
+    function q212() {
+        var one12 = document.getElementById("one12").style.background = "none"
+        var two12 = document.getElementById("two12").style.backgroundColor = "red"
+        var three12 = document.getElementById("three12").style.background = "none"
+        var four12 = document.getElementById("four12").style.background = "none"
+    }
+    function q312() {
+        var one12 = document.getElementById("one12").style.background = "none"
+        var two12 = document.getElementById("two12").style.background = "none"
+        var three12 = document.getElementById("three12").style.backgroundColor = "red"
+        var four12 = document.getElementById("four12").style.background = "none"
+    }
+    function q412() {
+        var one12 = document.getElementById("one12").style.background = "none"
+        var two12 = document.getElementById("two12").style.background = "none"
+        var three12 = document.getElementById("three12").style.background = "none"
+        var four12 = document.getElementById("four12").style.backgroundColor = "red"
+    }
+
+    function q122() {
+        var one22 = document.getElementById("one22").style.backgroundColor = "red"
+        var two22 = document.getElementById("two22").style.background = "none"
+        var three22 = document.getElementById("three22").style.background = "none"
+        var four22 = document.getElementById("four22").style.background = "none"
+    }
+    function q222() {
+        var one22 = document.getElementById("one22").style.background = "none"
+        var two22 = document.getElementById("two22").style.backgroundColor = "red"
+        var three22 = document.getElementById("three22").style.background = "none"
+        var four22 = document.getElementById("four22").style.background = "none"
+    }
+    function q322() {
+        var one22 = document.getElementById("one22").style.background = "none"
+        var two22 = document.getElementById("two22").style.background = "none"
+        var three22 = document.getElementById("three22").style.backgroundColor = "red"
+        var four22 = document.getElementById("four22").style.background = "none"
+    }
+    function q422() {
+        var one22 = document.getElementById("one22").style.background = "none"
+        var two22 = document.getElementById("two22").style.background = "none"
+        var three22 = document.getElementById("three22").style.background = "none"
+        var four22 = document.getElementById("four22").style.backgroundColor = "red"
+    }
+
+    function q132() {
+        var one32 = document.getElementById("one32").style.backgroundColor = "red"
+        var two32 = document.getElementById("two32").style.background = "none"
+        var three32 = document.getElementById("three32").style.background = "none"
+        var four32 = document.getElementById("four32").style.background = "none"
+    }
+    function q232() {
+        var one32 = document.getElementById("one32").style.background = "none"
+        var two32 = document.getElementById("two32").style.backgroundColor = "red"
+        var three32 = document.getElementById("three32").style.background = "none"
+        var four32 = document.getElementById("four32").style.background = "none"
+    }
+    function q332() {
+        var one32 = document.getElementById("one32").style.background = "none"
+        var two32 = document.getElementById("two32").style.background = "none"
+        var three32 = document.getElementById("three32").style.backgroundColor = "red"
+        var four32 = document.getElementById("four32").style.background = "none"
+    }
+    function q432() {
+        var one32 = document.getElementById("one32").style.background = "none"
+        var two32 = document.getElementById("two32").style.background = "none"
+        var three32 = document.getElementById("three32").style.background = "none"
+        var four32 = document.getElementById("four32").style.backgroundColor = "red"
+    }
+
+    function q142() {
+        var one42 = document.getElementById("one42").style.backgroundColor = "red"
+        var two42 = document.getElementById("two42").style.background = "none"
+        var three42 = document.getElementById("three42").style.background = "none"
+        var four42 = document.getElementById("four42").style.background = "none"
+    }
+    function q242() {
+        var one42 = document.getElementById("one42").style.background = "none"
+        var two42 = document.getElementById("two42").style.backgroundColor = "red"
+        var three42 = document.getElementById("three42").style.background = "none"
+        var four42 = document.getElementById("four42").style.background = "none"
+    }
+    function q342() {
+        var one42 = document.getElementById("one42").style.background = "none"
+        var two42 = document.getElementById("two42").style.background = "none"
+        var three42 = document.getElementById("three42").style.backgroundColor = "red"
+        var four42 = document.getElementById("four42").style.background = "none"
+    }
+    function q442() {
+        var one42 = document.getElementById("one42").style.background = "none"
+        var two42 = document.getElementById("two42").style.background = "none"
+        var three42 = document.getElementById("three42").style.background = "none"
+        var four42 = document.getElementById("four42").style.backgroundColor = "red"
+    }
+
+    function q152() {
+        var one52 = document.getElementById("one52").style.backgroundColor = "red"
+        var two52 = document.getElementById("two52").style.background = "none"
+        var three52 = document.getElementById("three52").style.background = "none"
+        var four52 = document.getElementById("four52").style.background = "none"
+    }
+    function q252() {
+        var one52 = document.getElementById("one52").style.background = "none"
+        var two52 = document.getElementById("two52").style.backgroundColor = "red"
+        var three52 = document.getElementById("three52").style.background = "none"
+        var four52 = document.getElementById("four52").style.background = "none"
+    }
+    function q352() {
+        var one52 = document.getElementById("one52").style.background = "none"
+        var two52 = document.getElementById("two52").style.background = "none"
+        var three52 = document.getElementById("three52").style.backgroundColor = "red"
+        var four52 = document.getElementById("four52").style.background = "none"
+    }
+    function q452() {
+        var one52 = document.getElementById("one52").style.background = "none"
+        var two52 = document.getElementById("two52").style.background = "none"
+        var three52 = document.getElementById("three52").style.background = "none"
+        var four52 = document.getElementById("four52").style.backgroundColor = "red"
+    }
+
+    function q162() {
+        var one62 = document.getElementById("one62").style.backgroundColor = "red"
+        var two62 = document.getElementById("two62").style.background = "none"
+        var three62 = document.getElementById("three62").style.background = "none"
+        var four62 = document.getElementById("four62").style.background = "none"
+    }
+    function q262() {
+        var one62 = document.getElementById("one62").style.background = "none"
+        var two62 = document.getElementById("two62").style.backgroundColor = "red"
+        var three62 = document.getElementById("three62").style.background = "none"
+        var four62 = document.getElementById("four62").style.background = "none"
+    }
+    function q362() {
+        var one62 = document.getElementById("one62").style.background = "none"
+        var two62 = document.getElementById("two62").style.background = "none"
+        var three62 = document.getElementById("three62").style.backgroundColor = "red"
+        var four62 = document.getElementById("four62").style.background = "none"
+    }
+    function q462() {
+        var one62 = document.getElementById("one62").style.background = "none"
+        var two62 = document.getElementById("two62").style.background = "none"
+        var three62 = document.getElementById("three62").style.background = "none"
+        var four62 = document.getElementById("four62").style.backgroundColor = "red"
+    }
+
+    function q172() {
+        var one72 = document.getElementById("one72").style.backgroundColor = "red"
+        var two72 = document.getElementById("two72").style.background = "none"
+        var three72 = document.getElementById("three72").style.background = "none"
+        var four72 = document.getElementById("four72").style.background = "none"
+    }
+    function q272() {
+        var one72 = document.getElementById("one72").style.background = "none"
+        var two72 = document.getElementById("two72").style.backgroundColor = "red"
+        var three72 = document.getElementById("three72").style.background = "none"
+        var four72 = document.getElementById("four72").style.background = "none"
+    }
+    function q372() {
+        var one72 = document.getElementById("one72").style.background = "none"
+        var two72 = document.getElementById("two72").style.background = "none"
+        var three72 = document.getElementById("three72").style.backgroundColor = "red"
+        var four72 = document.getElementById("four72").style.background = "none"
+    }
+    function q472() {
+        var one72 = document.getElementById("one72").style.background = "none"
+        var two72 = document.getElementById("two72").style.background = "none"
+        var three72 = document.getElementById("three72").style.background = "none"
+        var four72 = document.getElementById("four72").style.backgroundColor = "red"
+    }
+
+    function q182() {
+        var one82 = document.getElementById("one82").style.backgroundColor = "red"
+        var two82 = document.getElementById("two82").style.background = "none"
+        var three82 = document.getElementById("three82").style.background = "none"
+        var four82 = document.getElementById("four82").style.background = "none"
+    }
+    function q282() {
+        var one82 = document.getElementById("one82").style.background = "none"
+        var two82 = document.getElementById("two82").style.backgroundColor = "red"
+        var three82 = document.getElementById("three82").style.background = "none"
+        var four82 = document.getElementById("four82").style.background = "none"
+    }
+    function q382() {
+        var one82 = document.getElementById("one82").style.background = "none"
+        var two82 = document.getElementById("two82").style.background = "none"
+        var three82 = document.getElementById("three82").style.backgroundColor = "red"
+        var four82 = document.getElementById("four82").style.background = "none"
+    }
+    function q482() {
+        var one82 = document.getElementById("one82").style.background = "none"
+        var two82 = document.getElementById("two82").style.background = "none"
+        var three82 = document.getElementById("three82").style.background = "none"
+        var four82 = document.getElementById("four82").style.backgroundColor = "red"
+    }
+
+    function q192() {
+        var one92 = document.getElementById("one92").style.backgroundColor = "red"
+        var two92 = document.getElementById("two92").style.background = "none"
+        var three92 = document.getElementById("three92").style.background = "none"
+        var four92 = document.getElementById("four92").style.background = "none"
+    }
+    function q292() {
+        var one92 = document.getElementById("one92").style.background = "none"
+        var two92 = document.getElementById("two92").style.backgroundColor = "red"
+        var three92 = document.getElementById("three92").style.background = "none"
+        var four92 = document.getElementById("four92").style.background = "none"
+    }
+    function q392() {
+        var one92 = document.getElementById("one92").style.background = "none"
+        var two92 = document.getElementById("two92").style.background = "none"
+        var three92 = document.getElementById("three92").style.backgroundColor = "red"
+        var four92 = document.getElementById("four92").style.background = "none"
+    }
+    function q492() {
+        var one92 = document.getElementById("one92").style.background = "none"
+        var two92 = document.getElementById("two92").style.background = "none"
+        var three92 = document.getElementById("three92").style.background = "none"
+        var four92 = document.getElementById("four92").style.backgroundColor = "red"
+    }
+
+    function q1102() {
+        var one102 = document.getElementById("one102").style.backgroundColor = "red"
+        var two102 = document.getElementById("two102").style.background = "none"
+        var three102 = document.getElementById("three102").style.background = "none"
+        var four102 = document.getElementById("four102").style.background = "none"
+    }
+    function q2102() {
+        var one102 = document.getElementById("one102").style.background = "none"
+        var two102 = document.getElementById("two102").style.backgroundColor = "red"
+        var three102 = document.getElementById("three102").style.background = "none"
+        var four102 = document.getElementById("four102").style.background = "none"
+    }
+    function q3102() {
+        var one102 = document.getElementById("one102").style.background = "none"
+        var two102 = document.getElementById("two102").style.background = "none"
+        var three102 = document.getElementById("three102").style.backgroundColor = "red"
+        var four102 = document.getElementById("four102").style.background = "none"
+    }
+    function q4102() {
+        var one102 = document.getElementById("one102").style.background = "none"
+        var two102 = document.getElementById("two102").style.background = "none"
+        var three102 = document.getElementById("three102").style.background = "none"
+        var four102 = document.getElementById("four102").style.backgroundColor = "red"
+    }
+</script>
+
+

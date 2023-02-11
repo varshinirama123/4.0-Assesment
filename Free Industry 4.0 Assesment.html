@@ -9,10 +9,10 @@
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
         .main_div{
-            border: 1px solid yellow;
+            /* border: 1px solid yellow; */
             transform: translateY(-300px);
         }
-        #one1 {
+        #one11 {
         /* border: 1px solid red; */
         /* background-color: aquamarine; */
         width: 10px;
@@ -21,7 +21,7 @@
         transform: translateY(-242px);
         margin-left: 229px;
         }
-        #two1 {
+        #two11 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -30,7 +30,7 @@
             transform: translateY(-293px);
             margin-left: 231px;
         }
-        #three1 {
+        #three11 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -39,7 +39,7 @@
             transform: translateY(-355px);
             margin-left: 230px;
         }
-        #four1 {
+        #four11 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -49,7 +49,7 @@
             margin-left: 231px;
         }
 
-        #one2 {
+        #one21 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -58,7 +58,7 @@
             transform: translateY(-239px);
             margin-left: 285px;
         }
-        #two2 {
+        #two21 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -67,7 +67,7 @@
             transform: translateY(-263px);
             margin-left: 328px;
         }
-        #three2 {
+        #three21 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -76,7 +76,7 @@
             transform: translateY(-295px);
             margin-left: 378px;
         }
-        #four2 {
+        #four21 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -86,7 +86,7 @@
             margin-left: 421px;
         }
 
-        #one3 {
+        #one31 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -95,7 +95,7 @@
             transform: translateY(-210px);
             margin-left: 264px;
         }
-        #two3 {
+        #two31 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -104,7 +104,7 @@
             transform: translateY(-187px);
             margin-left: 291px;
         }
-        #three3 {
+        #three31 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -113,7 +113,7 @@
             transform: translateY(-173px);
             margin-left: 322px;
         }
-        #four3 {
+        #four31 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -123,7 +123,7 @@
             margin-left: 349px;
         }
 
-        #one4 {
+        #one41 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -132,7 +132,7 @@
             transform: translateY(-250px);
             margin-left: 193px;
         }
-        #two4 {
+        #two41 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -141,7 +141,7 @@
             transform: translateY(-227px);
             margin-left: 171px;
         }
-        #three4 {
+        #three41 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -150,7 +150,7 @@
             transform: translateY(-213px);
             margin-left: 139px;
         }
-        #four4 {
+        #four41 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -160,7 +160,7 @@
             margin-left: 113px;
         }
 
-        #one5 {
+        #one51 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -169,7 +169,7 @@
             transform: translateY(-359px);
             margin-left: 172px;
         }
-        #two5 {
+        #two51 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -178,7 +178,7 @@
             transform: translateY(-382px);
             margin-left: 134px;
         }
-        #three5 {
+        #three51 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -187,7 +187,7 @@
             transform: translateY(-414px);
             margin-left: 83px;
         }
-        #four5 {
+        #four51 {
             /* border: 1px solid red; */
             /* background-color: aquamarine; */
             width: 10px;
@@ -203,102 +203,103 @@
 </head>
 <body>
 
-       <div style = 'margin-bottom:40px;'>
+       <div id="b" style = 'margin-bottom:40px;'>
             <input type="button" value="Back" action="page3.html" class="back-button" onclick="window.history.back()">
        </div>
 
        <div class="flex-container" >
         
         <div style="display:inline-block;width:49%;"class="flex-child">
-            <h2 style="display:inline-block;width:49%;">Products and services</h2>
+            <h2 style="display:inline-block;width:49%;" id="h">Products and services</h2>
 
             <form id="product-customisation">
                 <fieldset>
-                    <legend>1. Product customisation</legend>
-                    <label onclick="q11()"><input type="radio" name="Customisation" value="1"> Product allows for no individualisation, standardised mass production</label><br>
-                    <label onclick="q21()"><input type="radio" name="Customisation" value="2"> Majority of products are made in large batch sizes with limited late differentiation</label><br>
-                    <label onclick="q31()"><input type="radio" name="Customisation" value="3"> Products can be largely customised but still have standardised base</label><br>
-                    <label onclick="q41()"><input type="radio" name="Customisation" value="4"> Late differentiation available for most maketo-order products (batch size 1)</label><br>
+                    <legend id="product">1. Product customisation</legend>
+                    <label id="product1" onclick="q111()"><input type="radio" name="Customisation" value="1"> Product allows for no individualisation, standardised mass production</label><br>
+                    <label id="product2" onclick="q211()"><input type="radio" name="Customisation" value="2"> Majority of products are made in large batch sizes with limited late differentiation</label><br>
+                    <label id="product3" onclick="q311()"><input type="radio" name="Customisation" value="3"> Products can be largely customised but still have standardised base</label><br>
+                    <label id="product4" onclick="q411()"><input type="radio" name="Customisation" value="4"> Late differentiation available for most maketo-order products (batch size 1)</label><br>
                 </fieldset>
                 
             </form>
             
             <form id="Digital-features">
                 <fieldset >
-                    <legend>2. Digital features of products</legend>
-                    <label onclick="q12()"><input type="radio" name="Digital features" value="1"> Products show only physical value</label><br>
-                    <label onclick="q22()"><input type="radio" name="Digital features" value="2"> Products show value only from intellectual property licensing</label><br>
-                    <label onclick="q32()"><input type="radio" name="Digital features" value="3"> Products exhibit some digital features and value from intellectual property licensing</label><br>
-                    <label onclick="q42()"><input type="radio" name="Digital features" value="4"> Products exhibit high digital features and value from intellectual property licensing</label><br>
+                    <legend id="digital">2. Digital features of products</legend>
+                    <label id="digital1" onclick="q121()"><input type="radio" name="Digital features" value="1"> Products show only physical value</label><br>
+                    <label id="digital2" onclick="q221()"><input type="radio" name="Digital features" value="2"> Products show value only from intellectual property licensing</label><br>
+                    <label id="digital3" onclick="q321()"><input type="radio" name="Digital features" value="3"> Products exhibit some digital features and value from intellectual property licensing</label><br>
+                    <label id="digital4" onclick="q421()"><input type="radio" name="Digital features" value="4"> Products exhibit high digital features and value from intellectual property licensing</label><br>
                 </fieldset>
                 
             </form>
             
             <form id="Data-driven">
                 <fieldset >
-                    <legend>3. Data-driven services</legend>
-                    <label onclick="q13()"><input type="radio" name="Data-driven services" value="1"> Data-driven services are offered without customer integration</label><br>
-                    <label onclick="q23()"><input type="radio" name="Data-driven services" value="2"> Data-driven services are offered with little customer integration</label><br>
-                    <label onclick="q33()"><input type="radio" name="Data-driven services" value="3"> Data-driven services are offered with customer integration</label><br>
-                    <label onclick="q43()"><input type="radio" name="Data-driven services" value="4"> Data-driven services are fully integrated with the customer</label><br>
+                    <legend id="data">3. Data-driven services</legend>
+                    <label id="data1" onclick="q131()"><input type="radio" name="Data-driven services" value="1"> Data-driven services are offered without customer integration</label><br>
+                    <label id="data2" onclick="q231()"><input type="radio" name="Data-driven services" value="2"> Data-driven services are offered with little customer integration</label><br>
+                    <label id="data3" onclick="q331()"><input type="radio" name="Data-driven services" value="3"> Data-driven services are offered with customer integration</label><br>
+                    <label id="data4" onclick="q431()"><input type="radio" name="Data-driven services" value="4"> Data-driven services are fully integrated with the customer</label><br>
                 </fieldset>
                 
             </form>
     
             <form id="data-usage">
                 <fieldset >
-                    <legend>4. Level of product data usage</legend>
-                    <label onclick="q14()"><input type="radio" name="Data usage" value="1"> Data is not used</label><br>
-                    <label onclick="q24()"><input type="radio" name="Data usage" value="2"> 0-20% of collected data is used</label><br>
-                    <label onclick="q34()"><input type="radio" name="Data usage" value="3"> 20-50% of collected data is used</label><br>
-                    <label onclick="q44()"><input type="radio" name="Data usage" value="4"> More than 50% of collected data is used</label><br>
+                    <legend id="usage">4. Level of product data usage</legend>
+                    <label id="usage1" onclick="q141()"><input type="radio" name="Data usage" value="1"> Data is not used</label><br>
+                    <label id="usage2" onclick="q241()"><input type="radio" name="Data usage" value="2"> 0-20% of collected data is used</label><br>
+                    <label id="usage3" onclick="q341()"><input type="radio" name="Data usage" value="3"> 20-50% of collected data is used</label><br>
+                    <label id="usage4" onclick="q441()"><input type="radio" name="Data usage" value="4"> More than 50% of collected data is used</label><br>
                 </fieldset>
             </form>
             
             <form id="share-of-revenue">
                 <fieldset >
-                    <legend>5. Share of revenue</legend>
-                    <label onclick="q15()"><input type="radio" name="Revenue share" value="1"> Data-driven services account for an initial share of revenue (<2.5%)</label><br>
-                    <label onclick="q25()"><input type="radio" name="Revenue share" value="2"> Data-driven services account for a moderate share of revenue (2.5- 7.5%)</label><br>
-                    <label onclick="q35()"><input type="radio" name="Revenue share" value="3"> Data-driven services account for a significant share of revenue (7.5- 10%)</label><br>
-                    <label onclick="q45()"><input type="radio" name="Revenue share" value="4"> Data-driven services play an important role in revenue (>10%)</label><br>
+                    <legend id="revenue">5. Share of revenue</legend>
+                    <label id="revenue1" onclick="q151()"><input type="radio" name="Revenue share" value="1"> Data-driven services account for an initial share of revenue (<2.5%)</label><br>
+                    <label id="revenue2" onclick="q251()"><input type="radio" name="Revenue share" value="2"> Data-driven services account for a moderate share of revenue (2.5- 7.5%)</label><br>
+                    <label id="revenue3" onclick="q351()"><input type="radio" name="Revenue share" value="3"> Data-driven services account for a significant share of revenue (7.5- 10%)</label><br>
+                    <label id="revenue4" onclick="q451()"><input type="radio" name="Revenue share" value="4"> Data-driven services play an important role in revenue (>10%)</label><br>
                 </fieldset>
                 
             </form> 
            
-            <input  type="submit" value="Submit" onclick="return confirm('Are you sure?'),window.open('page5.html', '_blank'),saveData() ;" >
+            <input type="submit" value="Next" onclick="window.location.replace('page5.html'),saveData1() ;">
+            
         </div>
 
-        <div class="flex-child">
+        <div id="f" class="flex-child">
              
             
             <div class="main_div"  style="width:65%; height:40%; margin-left: 120px;">
                 
-                <img id="img1" src="./images/pentagon.png" alt="">
-                <div id="one1"></div>
-                <div id="two1"></div>
-                <div id="three1"></div>
-                <div id="four1"></div>
+                <img id="img1" src="./images/Q1.png" alt="">
+                <div id="one11"></div>
+                <div id="two11"></div>
+                <div id="three11"></div>
+                <div id="four11"></div>
 
-                <div id="one2"></div>
-                <div id="two2"></div>
-                <div id="three2"></div>
-                <div id="four2"></div>
+                <div id="one21"></div>
+                <div id="two21"></div>
+                <div id="three21"></div>
+                <div id="four21"></div>
 
-                <div id="one3"></div>
-                <div id="two3"></div>
-                <div id="three3"></div>
-                <div id="four3"></div>
+                <div id="one31"></div>
+                <div id="two31"></div>
+                <div id="three31"></div>
+                <div id="four31"></div>
 
-                <div id="one4"></div>
-                <div id="two4"></div>
-                <div id="three4"></div>
-                <div id="four4"></div>
+                <div id="one41"></div>
+                <div id="two41"></div>
+                <div id="three41"></div>
+                <div id="four41"></div>
 
-                <div id="one5"></div>
-                <div id="two5"></div>
-                <div id="three5"></div>
-                <div id="four5"></div>
+                <div id="one51"></div>
+                <div id="two51"></div>
+                <div id="three51"></div>
+                <div id="four51"></div>
             </div>
        </div>
     
@@ -306,7 +307,7 @@
 
 
         <!-- <script>
-            function saveData() {
+            function saveData1() {
                 
               localStorage.clear();
 
@@ -321,7 +322,7 @@
 </body>
 </html>
 <script>
-function saveData() {
+function saveData1() {
     localStorage.clear();
     localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
     localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
@@ -333,128 +334,190 @@ function saveData() {
 </script>
 
 <script>
-    function q11() {
-        var one1 = document.getElementById("one1").style.backgroundColor = "red"
-        var two1 = document.getElementById("two1").style.background = "none"
-        var three1 = document.getElementById("three1").style.background = "none"
-        var four1 = document.getElementById("four1").style.background = "none"
+    function q111() {
+        var one11 = document.getElementById("one11").style.backgroundColor = "red"
+        var two11 = document.getElementById("two11").style.background = "none"
+        var three11 = document.getElementById("three11").style.background = "none"
+        var four11 = document.getElementById("four11").style.background = "none"
     }
-    function q21() {
-        var one1 = document.getElementById("one1").style.background = "none"
-        var two1 = document.getElementById("two1").style.backgroundColor = "red"
-        var three1 = document.getElementById("three1").style.background = "none"
-        var four1 = document.getElementById("four1").style.background = "none"
+    function q211() {
+        var one11 = document.getElementById("one11").style.background = "none"
+        var two11 = document.getElementById("two11").style.backgroundColor = "red"
+        var three11 = document.getElementById("three11").style.background = "none"
+        var four11 = document.getElementById("four11").style.background = "none"
     }
-    function q31() {
-        var one1 = document.getElementById("one1").style.background = "none"
-        var two1 = document.getElementById("two1").style.background = "none"
-        var three1 = document.getElementById("three1").style.backgroundColor = "red"
-        var four1 = document.getElementById("four1").style.background = "none"
+    function q311() {
+        var one11 = document.getElementById("one11").style.background = "none"
+        var two11 = document.getElementById("two11").style.background = "none"
+        var three11 = document.getElementById("three11").style.backgroundColor = "red"
+        var four11 = document.getElementById("four11").style.background = "none"
     }
-    function q41() {
-        var one1 = document.getElementById("one1").style.background = "none"
-        var two1 = document.getElementById("two1").style.background = "none"
-        var three1 = document.getElementById("three1").style.background = "none"
-        var four1 = document.getElementById("four1").style.backgroundColor = "red"
-    }
-
-    function q12() {
-        var one2 = document.getElementById("one2").style.backgroundColor = "red"
-        var two2 = document.getElementById("two2").style.background = "none"
-        var three2 = document.getElementById("three2").style.background = "none"
-        var four2 = document.getElementById("four2").style.background = "none"
-    }
-    function q22() {
-        var one2 = document.getElementById("one2").style.background = "none"
-        var two2 = document.getElementById("two2").style.backgroundColor = "red"
-        var three2 = document.getElementById("three2").style.background = "none"
-        var four2 = document.getElementById("four2").style.background = "none"
-    }
-    function q32() {
-        var one2 = document.getElementById("one2").style.background = "none"
-        var two2 = document.getElementById("two2").style.background = "none"
-        var three2 = document.getElementById("three2").style.backgroundColor = "red"
-        var four2 = document.getElementById("four2").style.background = "none"
-    }
-    function q42() {
-        var one2 = document.getElementById("one2").style.background = "none"
-        var two2 = document.getElementById("two2").style.background = "none"
-        var three2 = document.getElementById("three2").style.background = "none"
-        var four2 = document.getElementById("four2").style.backgroundColor = "red"
+    function q411() {
+        var one11 = document.getElementById("one11").style.background = "none"
+        var two11 = document.getElementById("two11").style.background = "none"
+        var three11 = document.getElementById("three11").style.background = "none"
+        var four11 = document.getElementById("four11").style.backgroundColor = "red"
     }
 
-    function q13() {
-        var one3 = document.getElementById("one3").style.backgroundColor = "red"
-        var two3 = document.getElementById("two3").style.background = "none"
-        var three3 = document.getElementById("three3").style.background = "none"
-        var four3 = document.getElementById("four3").style.background = "none"
+    function q121() {
+        var one21 = document.getElementById("one21").style.backgroundColor = "red"
+        var two21 = document.getElementById("two21").style.background = "none"
+        var three21 = document.getElementById("three21").style.background = "none"
+        var four21 = document.getElementById("four21").style.background = "none"
     }
-    function q23() {
-        var one3 = document.getElementById("one3").style.background = "none"
-        var two3 = document.getElementById("two3").style.backgroundColor = "red"
-        var three3 = document.getElementById("three3").style.background = "none"
-        var four3 = document.getElementById("four3").style.background = "none"
+    function q221() {
+        var one21 = document.getElementById("one21").style.background = "none"
+        var two21 = document.getElementById("two21").style.backgroundColor = "red"
+        var three21 = document.getElementById("three21").style.background = "none"
+        var four21 = document.getElementById("four21").style.background = "none"
     }
-    function q33() {
-        var one3 = document.getElementById("one3").style.background = "none"
-        var two3 = document.getElementById("two3").style.background = "none"
-        var three3 = document.getElementById("three3").style.backgroundColor = "red"
-        var four3 = document.getElementById("four3").style.background = "none"
+    function q321() {
+        var one21 = document.getElementById("one21").style.background = "none"
+        var two21 = document.getElementById("two21").style.background = "none"
+        var three21 = document.getElementById("three21").style.backgroundColor = "red"
+        var four21 = document.getElementById("four21").style.background = "none"
     }
-    function q43() {
-        var one3 = document.getElementById("one3").style.background = "none"
-        var two3 = document.getElementById("two3").style.background = "none"
-        var three3 = document.getElementById("three3").style.background = "none"
-        var four3 = document.getElementById("four3").style.backgroundColor = "red"
-    }
-
-    function q14() {
-        var one4 = document.getElementById("one4").style.backgroundColor = "red"
-        var two4 = document.getElementById("two4").style.background = "none"
-        var three4 = document.getElementById("three4").style.background = "none"
-        var four4 = document.getElementById("four4").style.background = "none"
-    }
-    function q24() {
-        var one4 = document.getElementById("one4").style.background = "none"
-        var two4 = document.getElementById("two4").style.backgroundColor = "red"
-        var three4 = document.getElementById("three4").style.background = "none"
-        var four4 = document.getElementById("four4").style.background = "none"
-    }
-    function q34() {
-        var one4 = document.getElementById("one4").style.background = "none"
-        var two4 = document.getElementById("two4").style.background = "none"
-        var three4 = document.getElementById("three4").style.backgroundColor = "red"
-        var four4 = document.getElementById("four4").style.background = "none"
-    }
-    function q44() {
-        var one4 = document.getElementById("one4").style.background = "none"
-        var two4 = document.getElementById("two4").style.background = "none"
-        var three4 = document.getElementById("three4").style.background = "none"
-        var four4 = document.getElementById("four4").style.backgroundColor = "red"
+    function q421() {
+        var one21 = document.getElementById("one21").style.background = "none"
+        var two21 = document.getElementById("two21").style.background = "none"
+        var three21 = document.getElementById("three21").style.background = "none"
+        var four21 = document.getElementById("four21").style.backgroundColor = "red"
     }
 
-    function q15() {
-        var one5 = document.getElementById("one5").style.backgroundColor = "red"
-        var two5 = document.getElementById("two5").style.background = "none"
-        var three5 = document.getElementById("three5").style.background = "none"
-        var four5 = document.getElementById("four5").style.background = "none"
+    function q131() {
+        var one31 = document.getElementById("one31").style.backgroundColor = "red"
+        var two31 = document.getElementById("two31").style.background = "none"
+        var three31 = document.getElementById("three31").style.background = "none"
+        var four31 = document.getElementById("four31").style.background = "none"
     }
-    function q25() {
-        var one5 = document.getElementById("one5").style.background = "none"
-        var two5 = document.getElementById("two5").style.backgroundColor = "red"
-        var three5 = document.getElementById("three5").style.background = "none"
-        var four5 = document.getElementById("four5").style.background = "none"
+    function q231() {
+        var one31 = document.getElementById("one31").style.background = "none"
+        var two31 = document.getElementById("two31").style.backgroundColor = "red"
+        var three31 = document.getElementById("three31").style.background = "none"
+        var four31 = document.getElementById("four31").style.background = "none"
     }
-    function q35() {
-        var one5 = document.getElementById("one5").style.background = "none"
-        var two5 = document.getElementById("two5").style.background = "none"
-        var three5 = document.getElementById("three5").style.backgroundColor = "red"
-        var four5 = document.getElementById("four5").style.background = "none"
+    function q331() {
+        var one31 = document.getElementById("one31").style.background = "none"
+        var two31 = document.getElementById("two31").style.background = "none"
+        var three31 = document.getElementById("three31").style.backgroundColor = "red"
+        var four31 = document.getElementById("four31").style.background = "none"
     }
-    function q45() {
-        var one5 = document.getElementById("one5").style.background = "none"
-        var two5 = document.getElementById("two5").style.background = "none"
-        var three5 = document.getElementById("three5").style.background = "none"
-        var four5 = document.getElementById("four5").style.backgroundColor = "red"
+    function q431() {
+        var one31 = document.getElementById("one31").style.background = "none"
+        var two31 = document.getElementById("two31").style.background = "none"
+        var three31 = document.getElementById("three31").style.background = "none"
+        var four31 = document.getElementById("four31").style.backgroundColor = "red"
     }
+
+    function q141() {
+        var one41 = document.getElementById("one41").style.backgroundColor = "red"
+        var two41 = document.getElementById("two41").style.background = "none"
+        var three41 = document.getElementById("three41").style.background = "none"
+        var four41 = document.getElementById("four41").style.background = "none"
+    }
+    function q241() {
+        var one41 = document.getElementById("one41").style.background = "none"
+        var two41 = document.getElementById("two41").style.backgroundColor = "red"
+        var three41 = document.getElementById("three41").style.background = "none"
+        var four41 = document.getElementById("four41").style.background = "none"
+    }
+    function q341() {
+        var one41 = document.getElementById("one41").style.background = "none"
+        var two41 = document.getElementById("two41").style.background = "none"
+        var three41 = document.getElementById("three41").style.backgroundColor = "red"
+        var four41 = document.getElementById("four41").style.background = "none"
+    }
+    function q441() {
+        var one41 = document.getElementById("one41").style.background = "none"
+        var two41 = document.getElementById("two41").style.background = "none"
+        var three41 = document.getElementById("three41").style.background = "none"
+        var four41 = document.getElementById("four41").style.backgroundColor = "red"
+    }
+
+    function q151() {
+        var one51 = document.getElementById("one51").style.backgroundColor = "red"
+        var two51 = document.getElementById("two51").style.background = "none"
+        var three51 = document.getElementById("three51").style.background = "none"
+        var four51 = document.getElementById("four51").style.background = "none"
+    }
+    function q251() {
+        var one51 = document.getElementById("one51").style.background = "none"
+        var two51 = document.getElementById("two51").style.backgroundColor = "red"
+        var three51 = document.getElementById("three51").style.background = "none"
+        var four51 = document.getElementById("four51").style.background = "none"
+    }
+    function q351() {
+        var one51 = document.getElementById("one51").style.background = "none"
+        var two51 = document.getElementById("two51").style.background = "none"
+        var three51 = document.getElementById("three51").style.backgroundColor = "red"
+        var four51 = document.getElementById("four51").style.background = "none"
+    }
+    function q451() {
+        var one51 = document.getElementById("one51").style.background = "none"
+        var two51 = document.getElementById("two51").style.background = "none"
+        var three51 = document.getElementById("three51").style.background = "none"
+        var four51 = document.getElementById("four51").style.backgroundColor = "red"
+    }
+
+    // function set2(){
+    //     var heading = document.getElementById("h").innerText="Manufacturing and operations"
+    //     var question1 = document.getElementById("product").innerHTML="1. Automation"
+    //     var option11 = document.getElementById("product1").innerHTML="<input type='radio' name='Automation' value='1'>Few machines can be controlled through automation"
+    //     var option21 = document.getElementById("product2").innerHTML="<input type='radio' name='Automation' value='2'>Some machines and system infrastructures can be controlled through automation"
+    //     var option31 = document.getElementById("product3").innerHTML="<input type='radio' name='Automation' value='3'>Most machines and system infrastructures can be controlled through automation"
+    //     var option41 = document.getElementById("product4").innerHTML="<input type='radio' name='Automation' value='4'>Machines and systems can be controlled completely through automation"
+
+    //     var question2 = document.getElementById("digital").innerHTML="2. Machine and operation system integration (M2M)"
+    //     var option12 = document.getElementById("digital1").innerHTML="<input type='radio' name='M2M' value='1'>Machines and systems have no M2M capability"
+    //     var option22 = document.getElementById("digital2").innerHTML="<input type='radio' name='M2M' value='2'>Machines and systems are to some extent interoperable"
+    //     var option32 = document.getElementById("digital3").innerHTML="<input type='radio' name='M2M' value='3'>Machines and systems are partially integrated"
+    //     var option42 = document.getElementById("digital4").innerHTML="<input type='radio' name='M2M' value='4'>Machines and systems are fully integrated"
+        
+    //     var question3 = document.getElementById("data").innerHTML="3. Equipment readiness for Industry 4"
+    //     var option13 = document.getElementById("data1").innerHTML="<input type='radio' name='readiness' value='1'>Significant overhaul required to meet Industry 4 model"
+    //     var option23 = document.getElementById("data2").innerHTML="<input type='radio' name='readiness' value='2'>Some machines and systems can be upgraded"
+    //     var option33 = document.getElementById("data3").innerHTML="<input type='radio' name='readiness' value='3'>Machines already meet some of the requirements and can be upgraded where required"
+    //     var option43 = document.getElementById("data4").innerHTML="<input type='radio' name='readiness' value='4'>Machines and systems already meet all future requirements"
+
+    //     var question4 = document.getElementById("usage").innerHTML="4. Autonomously guided workpieces"
+    //     var option14 = document.getElementById("usage1").innerHTML="<input type='radio' name='Autonomous' value='1'>Autonomously guided workpieces are not in use"
+    //     var option24 = document.getElementById("usage2").innerHTML="<input type='radio' name='Autonomous' value='2'>Autonomously guided workpieces are not in use, but there are pilots underway"
+    //     var option34 = document.getElementById("usage3").innerHTML="<input type='radio' name='Autonomous' value='3'>Autonomously guided workpieces used in selected areas"
+    //     var option44 = document.getElementById("usage4").innerHTML="<input type='radio' name='Autonomous' value='4'>Machines and systems are fully integrated"
+
+    //     var question5 = document.getElementById("revenue").innerHTML="5. Self-optimisingprocesses"
+    //     var option15 = document.getElementById("revenue1").innerHTML="<input type='radio' name='Self-optimising' value='1'>Self-optimisation processes are not in use"
+    //     var option25 = document.getElementById("revenue2").innerHTML="<input type='radio' name='Self-optimising' value='2'>Self-optimising processes are not in use, but there are pilots in more advanced areas of the business"
+    //     var option35 = document.getElementById("revenue3").innerHTML="<input type='radio' name='Self-optimising' value='3'>Self-optimising processes are used in selected areas"
+    //     var option45 = document.getElementById("revenue4").innerHTML="<input type='radio' name='Self-optimising' value='4'>Self-optimising processes are widely used"
+
+    //     var productDiv = document.createElement("div");
+    //     var question6 = document.createElement("Modelling");
+    //     question6.innerHTML = "6. Digital modelling";
+    //     productDiv.appendChild(question6);
+
+    //     var option16 = document.createElement("Modelling1");
+    //     option16.innerHTML = "<input type='radio' name='Modelling' value='1'>No digital modelling"
+    //     productDiv.appendChild(option16);
+
+    //     var option26 = document.createElement("Modelling2");
+    //     option26.innerHTML = "<input type='radio' name='Modelling' value='2'>Some processes use digital modelling"
+    //     productDiv.appendChild(option26);
+
+    //     var option36 = document.createElement("Modelling3");
+    //     option36.innerHTML = "<input type='radio' name='Modelling' value='3'>Most processes use digital modelling"
+    //     productDiv.appendChild(option36);
+
+    //     var option46 = document.createElement("Modelling4");
+    //     option46.innerHTML = "<input type='radio' name='Modelling' value='4'>Complete digital modelling used for all relevant processes"
+    //     productDiv.appendChild(option46);
+
+    //     document.body.appendChild(productDiv);
+
+    // }
+
+
+
 </script>
+
+

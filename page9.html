@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- <script type="text/javascript" src="storage.js"></script> -->
+    <style>
+        .main_div{
+            border: 1px solid yellow;
+            transform: translateY(-200px);
+        }
+        #one16 {
+        /* border: 1px solid red; */
+        background-color: aquamarine;
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        transform: translateY(-242px);
+        margin-left: 229px;
+        }
+        #two16 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-293px);
+            margin-left: 231px;
+        }
+        #three16 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-355px);
+            margin-left: 230px;
+        }
+        #four16 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-405px);
+            margin-left: 231px;
+        }
+
+        #one26 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-239px);
+            margin-left: 285px;
+        }
+        #two26 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-263px);
+            margin-left: 328px;
+        }
+        #three26 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-295px);
+            margin-left: 378px;
+        }
+        #four26 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-319px);
+            margin-left: 421px;
+        }
+
+        #one36 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-210px);
+            margin-left: 264px;
+        }
+        #two36 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-187px);
+            margin-left: 291px;
+        }
+        #three36 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-173px);
+            margin-left: 322px;
+        }
+        #four36 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-155px);
+            margin-left: 349px;
+        }
+
+        #one46 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-250px);
+            margin-left: 193px;
+        }
+        #two46 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-227px);
+            margin-left: 171px;
+        }
+        #three46 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-213px);
+            margin-left: 139px;
+        }
+        #four46 {
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            transform: translateY(-195px);
+            margin-left: 113px;
+        }
+
+    </style> 
+</head>
+
+<body>
+
+       <div style = 'margin-bottom:40px;'>
+            <input type="button" value="Back" action="page8.html" class="back-button" onclick="window.history.back()">
+       </div>
+
+       <div class="flex-container" >
+        
+        <div style="display:inline-block;width:49%;"class="flex-child">
+            <h2 style="display:inline-block;width:49%;">Legal Considerations</h2>
+
+            <form id="Contracting_models">
+                <fieldset>
+                    <legend>1. Contracting models</legend>
+                    <label onclick="q116()"><input type="radio" name="Contracting_models" value="1"> Contracting processes are linear and unchanged</label><br>
+                    <label onclick="q216()"><input type="radio" name="Contracting_models" value="2"> Some changes to contracting processes to reflect operational changes</label><br>
+                    <label onclick="q316()"><input type="radio" name="Contracting_models" value="3"> Some 'flagship' projects utilise new contracting models but it is not standard across the board</label><br>
+                    <label onclick="q416()"><input type="radio" name="Contracting_models" value="4"> All contracting is behavioural and incentivises all parties to achieve the best result</label><br>
+                </fieldset>
+                
+            </form>
+            
+            <form id="Risk">
+                <fieldset >
+                    <legend>2. Risk</legend>
+                    <label onclick="q126()"><input type="radio" name="Risk" value="1"> New risks not identified or assessed</label><br>
+                    <label onclick="q226()"><input type="radio" name="Risk" value="2"> New risks identified and/or assessed but no mitigations planned</label><br>
+                    <label onclick="q326()"><input type="radio" name="Risk" value="3"> New risks identified and assessed, and limited mitigations put in place</label><br>
+                    <label onclick="q426()"><input type="radio" name="Risk" value="4"> Working party has assessed the changing risk profile and has procedures in place to mitigate these</label><br>
+                </fieldset>
+                
+            </form>
+            
+            <form id="Data_protection">
+                <fieldset >
+                    <legend>3. Data protection</legend>
+                    <label onclick="q136()"><input type="radio" name="Data_protection" value="1"> No data protection policies or procedures</label><br>
+                    <label onclick="q236()"><input type="radio" name="Data_protection" value="2"> Have internal policies but do not ensure compliance in engagement with suppliers/customers</label><br>
+                    <label onclick="q336()"><input type="radio" name="Data_protection" value="3"> Good understanding with robust policies and procedures but haven't updated for General Data Protection Regulation</label><br>
+                    <label onclick="q436()"><input type="radio" name="Data_protection" value="4"> Conducted a recent General Data Protection Regulation audit and are confident of compliance including in light of Industry 4</label><br>
+                </fieldset>
+                
+            </form>
+    
+            <form id="Intellectual_property">
+                <fieldset >
+                    <legend>4. Intellectual property</legend>
+                    <label onclick="q146()"><input type="radio" name="Intellectual_property" value="1"> Intellectual property in new products and services is not identified or protected</label><br>
+                    <label onclick="q246()"><input type="radio" name="Intellectual_property" value="2"> Awareness of intellectual property in new products and services, but no legal protections identified or applied for</label><br>
+                    <label onclick="q346()"><input type="radio" name="Intellectual_property" value="3"> Intellectual property in products and services is identified and in part assessments made as to whether registrations/ contractual rights required, and if required, appropriate steps taken</label><br>
+                    <label onclick="q446()"><input type="radio" name="Intellectual_property" value="4"> Intellectual property in products and services is identified and assessments made as to whether registrations/ contractual rights required and, if required, appropriate steps taken</label><br>
+                </fieldset>
+            </form>
+ 
+            <input  type="submit" value="submit" onclick="return confirm('Are you sure you want to submit  your answers?'),window.location.replace('page10.html'),saveData6() ;" >
+        </div>
+
+        <div class="flex-child">
+             
+            
+            <div class="main_div"  style="width:65%; height:40%; margin-left: 120px;">
+                
+                <img id="img6" src="./images/Q6.PNG" alt="">
+                <div id="one16"></div>
+                <div id="two16"></div>
+                <div id="three16"></div>
+                <div id="four16"></div>
+
+                <div id="one26"></div>
+                <div id="two26"></div>
+                <div id="three26"></div>
+                <div id="four26"></div>
+
+                <div id="one36"></div>
+                <div id="two36"></div>
+                <div id="three36"></div>
+                <div id="four36"></div>
+
+                <div id="one46"></div>
+                <div id="two46"></div>
+                <div id="three46"></div>
+                <div id="four46"></div>
+
+            </div>
+       </div>
+    
+
+
+
+        <!-- <script>
+            function saveData2() {
+                
+              localStorage.clear();
+
+              localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+              localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
+              localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
+              localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
+              localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
+            }
+        </script> -->
+     
+</body>
+</html>
+<script>
+function saveData6() {
+    // localStorage.clear();
+    localStorage.setItem("Contracting_models", document.querySelector('input[name="Contracting_models"]:checked').value);
+    localStorage.setItem("Risk", document.querySelector('input[name="Risk"]:checked').value);
+    localStorage.setItem("Data_protection", document.querySelector('input[name="Data_protection"]:checked').value);
+    localStorage.setItem("Intellectual_property", document.querySelector('input[name="Intellectual_property"]:checked').value);
+}
+</script>
+
+<script>
+    function q116() {
+        var one16 = document.getElementById("one16").style.backgroundColor = "red"
+        var two16 = document.getElementById("two16").style.background = "none"
+        var three16 = document.getElementById("three16").style.background = "none"
+        var four16 = document.getElementById("four16").style.background = "none"
+    }
+    function q216() {
+        var one16 = document.getElementById("one16").style.background = "none"
+        var two16 = document.getElementById("two16").style.backgroundColor = "red"
+        var three16 = document.getElementById("three16").style.background = "none"
+        var four16 = document.getElementById("four16").style.background = "none"
+    }
+    function q316() {
+        var one16 = document.getElementById("one16").style.background = "none"
+        var two16 = document.getElementById("two16").style.background = "none"
+        var three16 = document.getElementById("three16").style.backgroundColor = "red"
+        var four16 = document.getElementById("four16").style.background = "none"
+    }
+    function q416() {
+        var one16 = document.getElementById("one16").style.background = "none"
+        var two16 = document.getElementById("two16").style.background = "none"
+        var three16 = document.getElementById("three16").style.background = "none"
+        var four16 = document.getElementById("four16").style.backgroundColor = "red"
+    }
+
+    function q126() {
+        var one26 = document.getElementById("one26").style.backgroundColor = "red"
+        var two26 = document.getElementById("two26").style.background = "none"
+        var three26 = document.getElementById("three26").style.background = "none"
+        var four26 = document.getElementById("four26").style.background = "none"
+    }
+    function q226() {
+        var one26 = document.getElementById("one26").style.background = "none"
+        var two26 = document.getElementById("two26").style.backgroundColor = "red"
+        var three26 = document.getElementById("three26").style.background = "none"
+        var four26 = document.getElementById("four26").style.background = "none"
+    }
+    function q326() {
+        var one26 = document.getElementById("one26").style.background = "none"
+        var two26 = document.getElementById("two26").style.background = "none"
+        var three26 = document.getElementById("three26").style.backgroundColor = "red"
+        var four26 = document.getElementById("four26").style.background = "none"
+    }
+    function q426() {
+        var one26 = document.getElementById("one26").style.background = "none"
+        var two26 = document.getElementById("two26").style.background = "none"
+        var three26 = document.getElementById("three26").style.background = "none"
+        var four26 = document.getElementById("four26").style.backgroundColor = "red"
+    }
+
+    function q136() {
+        var one36 = document.getElementById("one36").style.backgroundColor = "red"
+        var two36 = document.getElementById("two36").style.background = "none"
+        var three36 = document.getElementById("three36").style.background = "none"
+        var four36 = document.getElementById("four36").style.background = "none"
+    }
+    function q236() {
+        var one36 = document.getElementById("one36").style.background = "none"
+        var two36 = document.getElementById("two36").style.backgroundColor = "red"
+        var three36 = document.getElementById("three36").style.background = "none"
+        var four36 = document.getElementById("four36").style.background = "none"
+    }
+    function q336() {
+        var one36 = document.getElementById("one36").style.background = "none"
+        var two36 = document.getElementById("two36").style.background = "none"
+        var three36 = document.getElementById("three36").style.backgroundColor = "red"
+        var four36 = document.getElementById("four36").style.background = "none"
+    }
+    function q436() {
+        var one36 = document.getElementById("one36").style.background = "none"
+        var two36 = document.getElementById("two36").style.background = "none"
+        var three36 = document.getElementById("three36").style.background = "none"
+        var four36 = document.getElementById("four36").style.backgroundColor = "red"
+    }
+
+    function q146() {
+        var one46 = document.getElementById("one46").style.backgroundColor = "red"
+        var two46= document.getElementById("two46").style.background = "none"
+        var three46 = document.getElementById("three46").style.background = "none"
+        var four46 = document.getElementById("four46").style.background = "none"
+    }
+    function q246() {
+        var one46 = document.getElementById("one46").style.background = "none"
+        var two46 = document.getElementById("two46").style.backgroundColor = "red"
+        var three46 = document.getElementById("three46").style.background = "none"
+        var four46 = document.getElementById("four46").style.background = "none"
+    }
+    function q346() {
+        var one46 = document.getElementById("one46").style.background = "none"
+        var two46 = document.getElementById("two46").style.background = "none"
+        var three46 = document.getElementById("three46").style.backgroundColor = "red"
+        var four46 = document.getElementById("four46").style.background = "none"
+    }
+    function q446() {
+        var one46 = document.getElementById("one46").style.background = "none"
+        var two46 = document.getElementById("two46").style.background = "none"
+        var three46 = document.getElementById("three46").style.background = "none"
+        var four46 = document.getElementById("four46").style.backgroundColor = "red"
+    }
+
+</script>
+
+

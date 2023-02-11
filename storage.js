@@ -8,15 +8,91 @@ submitButton.addEventListener("click", function(event) {
     let dataUsage = document.querySelector('input[name="Data usage"]:checked').value;
     let revenueShare = document.querySelector('input[name="Revenue share"]:checked').value;
 
+    let Automation = document.querySelector('input[name="Automation"]:checked').value;
+    let M2M = document.querySelector('input[name="M2M"]:checked').value;
+    let readiness = document.querySelector('input[name="readiness"]:checked').value;
+    let Autonomous = document.querySelector('input[name="Autonomous"]:checked').value;
+    let Self_optimising = document.querySelector('input[name="Self_optimising"]:checked').value;
+    let Modelling = document.querySelector('input[name="Modelling"]:checked').value;
+    let Collection = document.querySelector('input[name="Collection"]:checked').value;
+    let Op_data_usage = document.querySelector('input[name="Op_data_usage"]:checked').value;
+    let Solution_usage = document.querySelector('input[name="Solution_usage"]:checked').value;
+    let IT = document.querySelector('input[name="IT"]:checked').value;
+
+    let Degree = document.querySelector('input[name="Degree"]:checked').value;
+    let Measurement = document.querySelector('input[name="Measurement"]:checked').value;
+    let Investments = document.querySelector('input[name="Investments"]:checked').value;
+    let People_capabilities = document.querySelector('input[name="People_capabilities"]:checked').value;
+    let Collaboration = document.querySelector('input[name="Collaboration"]:checked').value;
+    let Leadership = document.querySelector('input[name="Leadership"]:checked').value;
+    let Finance = document.querySelector('input[name="Finance"]:checked').value;
+    
+    let Data_management = document.querySelector('input[name="Data_management"]:checked').value;
+    let Integration = document.querySelector('input[name="Integration"]:checked').value;
+    let Chain_visibility = document.querySelector('input[name="Chain_visibility"]:checked').value;
+    let Chain_flexibility = document.querySelector('input[name="Chain_flexibility"]:checked').value;
+    let Lead_times = document.querySelector('input[name="Lead_times"]:checked').value;
+
+    let Business_model = document.querySelector('input[name="Business_model"]:checked').value;
+    let Data_driven = document.querySelector('input[name="Data_driven"]:checked').value;
+    let Tracking = document.querySelector('input[name="Tracking"]:checked').value;
+    let Automated_scheduling = document.querySelector('input[name="Automated_scheduling"]:checked').value;
+    let Marketing_channels = document.querySelector('input[name="Marketing_channels"]:checked').value;
+    let Business = document.querySelector('input[name="Business"]:checked').value;
+
+    let Contracting_models = document.querySelector('input[name="Contracting_models"]:checked').value;
+    let Risk = document.querySelector('input[name="Risk"]:checked').value;
+    let Data_protection = document.querySelector('input[name="Data_protection"]:checked').value;
+    let Intellectual_property = document.querySelector('input[name="Intellectual_property"]:checked').value;
+
+
     let data = {
         "productCustomisation": productCustomisation,
         "digitalFeatures": digitalFeatures,
         "dataDrivenServices": dataDrivenServices,
         "dataUsage": dataUsage,
-        "revenueShare": revenueShare
+        "revenueShare": revenueShare,
+
+        "Automation": Automation,
+        "M2M": M2M,
+        "readiness": readiness,
+        "Autonomous": Autonomous,
+        "Self_optimising": Self_optimising,
+        "Modelling": Modelling,
+        "Collection": Collection,
+        "Op_data_usage": Op_data_usage,
+        "Solution_usage": Solution_usage,
+        "IT": IT,
+
+        "Degree": Degree,
+        "Measurement": Measurement,
+        "Investments": Investments,
+        "People_capabilities": People_capabilities,
+        "Collaboration": Collaboration,
+        "Leadership": Leadership,
+        "Finance": Finance,
+
+        "Data_management": Data_management,
+        "Integration": Integration,
+        "Chain_visibility": Chain_visibility,
+        "Chain_flexibility": Chain_flexibility,
+        "Lead_times": Lead_times,
+
+        "Business_model": Business_model,
+        "Data_driven": Data_driven,
+        "Tracking": Tracking,
+        "Automated_scheduling": Automated_scheduling,
+        "Marketing_channels": Marketing_channels,
+        "Business": Business,
+
+        "Contracting_models": Contracting_models,
+        "Risk": Risk,
+        "Data_protection": Data_protection,
+        "Intellectual_property": Intellectual_property
+
     };
     localStorage.setItem("formData", JSON.stringify(data));
-    window.open(page5.html, _blank);
+    // window.location.replace(page5.html);
 });
 
 // function saveData() {
