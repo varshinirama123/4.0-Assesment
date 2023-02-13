@@ -324,11 +324,37 @@
 <script>
 function saveData4() {
     // localStorage.clear();
-    localStorage.setItem("Data_management", document.querySelector('input[name="Data_management"]:checked').value);
-    localStorage.setItem("Integration", document.querySelector('input[name="Integration"]:checked').value);
-    localStorage.setItem("Chain_visibility", document.querySelector('input[name="Chain_visibility"]:checked').value);
-    localStorage.setItem("Chain_flexibility", document.querySelector('input[name="Chain_flexibility"]:checked').value);
-    localStorage.setItem("Lead_times", document.querySelector('input[name="Lead_times"]:checked').value);
+
+    // Check if the 'Data management' radio button is checked before saving its value
+    if (document.querySelector('input[name="Data_management"]:checked')) {
+        localStorage.setItem("Data_management", document.querySelector('input[name="Data_management"]:checked').value);
+    }
+
+    // Check if the 'Integration' radio button is checked before saving its value
+    if (document.querySelector('input[name="Integration"]:checked')) {
+        localStorage.setItem("Integration", document.querySelector('input[name="Integration"]:checked').value);
+    }
+
+    // Check if the 'Chain visibility' radio button is checked before saving its value
+    if (document.querySelector('input[name="Chain_visibility"]:checked')) {
+        localStorage.setItem("Chain_visibility", document.querySelector('input[name="Chain_visibility"]:checked').value);
+    }
+
+    // Check if the 'Chain flexibility' radio button is checked before saving its value
+    if (document.querySelector('input[name="Chain_flexibility"]:checked')) {
+        localStorage.setItem("Chain_flexibility", document.querySelector('input[name="Chain_flexibility"]:checked').value);
+    }
+
+    // Check if the 'Lead times' radio button is checked before saving its value
+    if (document.querySelector('input[name="Lead_times"]:checked')) {
+        localStorage.setItem("Lead_times", document.querySelector('input[name="Lead_times"]:checked').value);
+    }
+
+    // localStorage.setItem("Data_management", document.querySelector('input[name="Data_management"]:checked').value);
+    // localStorage.setItem("Integration", document.querySelector('input[name="Integration"]:checked').value);
+    // localStorage.setItem("Chain_visibility", document.querySelector('input[name="Chain_visibility"]:checked').value);
+    // localStorage.setItem("Chain_flexibility", document.querySelector('input[name="Chain_flexibility"]:checked').value);
+    // localStorage.setItem("Lead_times", document.querySelector('input[name="Lead_times"]:checked').value);
 }
 </script>
 

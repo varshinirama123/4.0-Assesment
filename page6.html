@@ -425,13 +425,44 @@
 <script>
 function saveData3() {
     // localStorage.clear();
-    localStorage.setItem("Degree", document.querySelector('input[name="Degree"]:checked').value);
-    localStorage.setItem("Measurement", document.querySelector('input[name="Measurement"]:checked').value);
-    localStorage.setItem("Investments", document.querySelector('input[name="Investments"]:checked').value);
-    localStorage.setItem("People_capabilities", document.querySelector('input[name="People_capabilities"]:checked').value);
-    localStorage.setItem("Collaboration", document.querySelector('input[name="Collaboration"]:checked').value);
-    localStorage.setItem("Leadership", document.querySelector('input[name="Leadership"]:checked').value);
-    localStorage.setItem("Finance", document.querySelector('input[name="Finance"]:checked').value);
+
+    const degree = document.querySelector('input[name="Degree"]:checked');
+    const measurement = document.querySelector('input[name="Measurement"]:checked');
+    const investments = document.querySelector('input[name="Investments"]:checked');
+    const peopleCapabilities = document.querySelector('input[name="People_capabilities"]:checked');
+    const collaboration = document.querySelector('input[name="Collaboration"]:checked');
+    const leadership = document.querySelector('input[name="Leadership"]:checked');
+    const finance = document.querySelector('input[name="Finance"]:checked');
+
+    if (degree) {
+        localStorage.setItem("Degree", degree.value);
+    }
+    if (measurement) {
+        localStorage.setItem("Measurement", measurement.value);
+    }
+    if (investments) {
+        localStorage.setItem("Investments", investments.value);
+    }
+    if (peopleCapabilities) {
+        localStorage.setItem("People_capabilities", peopleCapabilities.value);
+    }
+    if (collaboration) {
+        localStorage.setItem("Collaboration", collaboration.value);
+    }
+    if (leadership) {
+        localStorage.setItem("Leadership", leadership.value);
+    }
+    if (finance) {
+        localStorage.setItem("Finance", finance.value);
+    }
+
+    // localStorage.setItem("Degree", document.querySelector('input[name="Degree"]:checked').value);
+    // localStorage.setItem("Measurement", document.querySelector('input[name="Measurement"]:checked').value);
+    // localStorage.setItem("Investments", document.querySelector('input[name="Investments"]:checked').value);
+    // localStorage.setItem("People_capabilities", document.querySelector('input[name="People_capabilities"]:checked').value);
+    // localStorage.setItem("Collaboration", document.querySelector('input[name="Collaboration"]:checked').value);
+    // localStorage.setItem("Leadership", document.querySelector('input[name="Leadership"]:checked').value);
+    // localStorage.setItem("Finance", document.querySelector('input[name="Finance"]:checked').value);
 }
 
 </script>

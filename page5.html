@@ -582,16 +582,57 @@
 <script>
 function saveData2() {
     // localStorage.clear();
-    localStorage.setItem("Automation", document.querySelector('input[name="Automation"]:checked').value);
-    localStorage.setItem("M2M", document.querySelector('input[name="M2M"]:checked').value);
-    localStorage.setItem("readiness", document.querySelector('input[name="readiness"]:checked').value);
-    localStorage.setItem("Autonomous", document.querySelector('input[name="Autonomous"]:checked').value);
-    localStorage.setItem("Self_optimising", document.querySelector('input[name="Self_optimising"]:checked').value);
-    localStorage.setItem("Modelling", document.querySelector('input[name="Modelling"]:checked').value);
-    localStorage.setItem("Collection", document.querySelector('input[name="Collection"]:checked').value);
-    localStorage.setItem("Op_data_usage", document.querySelector('input[name="Op_data_usage"]:checked').value);
-    localStorage.setItem("Solution_usage", document.querySelector('input[name="Solution_usage"]:checked').value);
-    localStorage.setItem("IT", document.querySelector('input[name="IT"]:checked').value);
+
+    if (document.querySelector('input[name="Automation"]:checked')) {
+        localStorage.setItem("Automation", document.querySelector('input[name="Automation"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="M2M"]:checked')) {
+        localStorage.setItem("M2M", document.querySelector('input[name="M2M"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="readiness"]:checked')) {
+        localStorage.setItem("readiness", document.querySelector('input[name="readiness"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Autonomous"]:checked')) {
+        localStorage.setItem("Autonomous", document.querySelector('input[name="Autonomous"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Self_optimising"]:checked')) {
+        localStorage.setItem("Self_optimising", document.querySelector('input[name="Self_optimising"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Modelling"]:checked')) {
+        localStorage.setItem("Modelling", document.querySelector('input[name="Modelling"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Collection"]:checked')) {
+        localStorage.setItem("Collection", document.querySelector('input[name="Collection"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Op_data_usage"]:checked')) {
+        localStorage.setItem("Op_data_usage", document.querySelector('input[name="Op_data_usage"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Solution_usage"]:checked')) {
+        localStorage.setItem("Solution_usage", document.querySelector('input[name="Solution_usage"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="IT"]:checked')) {
+        localStorage.setItem("IT", document.querySelector('input[name="IT"]:checked').value);
+    }
+
+    // localStorage.setItem("Automation", document.querySelector('input[name="Automation"]:checked').value);
+    // localStorage.setItem("M2M", document.querySelector('input[name="M2M"]:checked').value);
+    // localStorage.setItem("readiness", document.querySelector('input[name="readiness"]:checked').value);
+    // localStorage.setItem("Autonomous", document.querySelector('input[name="Autonomous"]:checked').value);
+    // localStorage.setItem("Self_optimising", document.querySelector('input[name="Self_optimising"]:checked').value);
+    // localStorage.setItem("Modelling", document.querySelector('input[name="Modelling"]:checked').value);
+    // localStorage.setItem("Collection", document.querySelector('input[name="Collection"]:checked').value);
+    // localStorage.setItem("Op_data_usage", document.querySelector('input[name="Op_data_usage"]:checked').value);
+    // localStorage.setItem("Solution_usage", document.querySelector('input[name="Solution_usage"]:checked').value);
+    // localStorage.setItem("IT", document.querySelector('input[name="IT"]:checked').value);
 }
 
 </script>

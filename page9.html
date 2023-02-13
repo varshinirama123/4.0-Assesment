@@ -270,10 +270,31 @@
 <script>
 function saveData6() {
     // localStorage.clear();
-    localStorage.setItem("Contracting_models", document.querySelector('input[name="Contracting_models"]:checked').value);
-    localStorage.setItem("Risk", document.querySelector('input[name="Risk"]:checked').value);
-    localStorage.setItem("Data_protection", document.querySelector('input[name="Data_protection"]:checked').value);
-    localStorage.setItem("Intellectual_property", document.querySelector('input[name="Intellectual_property"]:checked').value);
+
+    const contractingModels = document.querySelector('input[name="Contracting_models"]:checked');
+    if (contractingModels) {
+        localStorage.setItem("Contracting_models", contractingModels.value);
+    }
+
+    const risk = document.querySelector('input[name="Risk"]:checked');
+    if (risk) {
+        localStorage.setItem("Risk", risk.value);
+    }
+
+    const dataProtection = document.querySelector('input[name="Data_protection"]:checked');
+    if (dataProtection) {
+        localStorage.setItem("Data_protection", dataProtection.value);
+    }
+
+    const intellectualProperty = document.querySelector('input[name="Intellectual_property"]:checked');
+    if (intellectualProperty) {
+        localStorage.setItem("Intellectual_property", intellectualProperty.value);
+    }
+
+    // localStorage.setItem("Contracting_models", document.querySelector('input[name="Contracting_models"]:checked').value);
+    // localStorage.setItem("Risk", document.querySelector('input[name="Risk"]:checked').value);
+    // localStorage.setItem("Data_protection", document.querySelector('input[name="Data_protection"]:checked').value);
+    // localStorage.setItem("Intellectual_property", document.querySelector('input[name="Intellectual_property"]:checked').value);
 }
 </script>
 

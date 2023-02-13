@@ -324,11 +324,32 @@
 <script>
 function saveData1() {
     localStorage.clear();
-    localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
-    localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
-    localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
-    localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
-    localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
+
+    if (document.querySelector('input[name="Customisation"]:checked')) {
+        localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+      }
+
+    if (document.querySelector('input[name="Digital features"]:checked')) {
+        localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
+      }
+
+    if (document.querySelector('input[name="Data-driven services"]:checked')) {
+        localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
+      }
+
+    if (document.querySelector('input[name="Data usage"]:checked')) {
+        localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
+      }
+
+    if (document.querySelector('input[name="Revenue share"]:checked')) {
+        localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
+      }
+      
+    // localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+    // localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
+    // localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
+    // localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
+    // localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
 }
 
 </script>

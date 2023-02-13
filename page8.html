@@ -374,12 +374,41 @@
 <script>
 function saveData5() {
     // localStorage.clear();
-    localStorage.setItem("Business_model", document.querySelector('input[name="Business_model"]:checked').value);
-    localStorage.setItem("Data_driven", document.querySelector('input[name="Data_driven"]:checked').value);
-    localStorage.setItem("Tracking", document.querySelector('input[name="Tracking"]:checked').value);
-    localStorage.setItem("Automated_scheduling", document.querySelector('input[name="Automated_scheduling"]:checked').value);
-    localStorage.setItem("Marketing_channels", document.querySelector('input[name="Marketing_channels"]:checked').value);
-    localStorage.setItem("Business", document.querySelector('input[name="Business"]:checked').value);
+
+    if (document.querySelector('input[name="Customisation"]:checked')) {
+        localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Business_model"]:checked')) {
+        localStorage.setItem("Business_model", document.querySelector('input[name="Business_model"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Data_driven"]:checked')) {
+        localStorage.setItem("Data_driven", document.querySelector('input[name="Data_driven"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Tracking"]:checked')) {
+        localStorage.setItem("Tracking", document.querySelector('input[name="Tracking"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Automated_scheduling"]:checked')) {
+        localStorage.setItem("Automated_scheduling", document.querySelector('input[name="Automated_scheduling"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Marketing_channels"]:checked')) {
+        localStorage.setItem("Marketing_channels", document.querySelector('input[name="Marketing_channels"]:checked').value);
+    }
+
+    if (document.querySelector('input[name="Business"]:checked')) {
+        localStorage.setItem("Business", document.querySelector('input[name="Business"]:checked').value);
+    }
+
+    // localStorage.setItem("Business_model", document.querySelector('input[name="Business_model"]:checked').value);
+    // localStorage.setItem("Data_driven", document.querySelector('input[name="Data_driven"]:checked').value);
+    // localStorage.setItem("Tracking", document.querySelector('input[name="Tracking"]:checked').value);
+    // localStorage.setItem("Automated_scheduling", document.querySelector('input[name="Automated_scheduling"]:checked').value);
+    // localStorage.setItem("Marketing_channels", document.querySelector('input[name="Marketing_channels"]:checked').value);
+    // localStorage.setItem("Business", document.querySelector('input[name="Business"]:checked').value);
 }
 
 </script>
