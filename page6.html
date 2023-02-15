@@ -818,7 +818,7 @@
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page5.html'">
        </div>
 
-       <div class="flex-container" >
+       <div id="my-di" class="flex-container" >
         
         <div style="display:inline-block;width:49%;"class="flex-child">
             <h2 style="display:inline-block;width:auto;">Strategy and Organisation</h2>
@@ -895,14 +895,14 @@
                 <label onclick="q473()"><input type="radio" name="Finance" value="4"> Quarterly cost/benefit analysis of Industry 4 investment</label><br>
             </fieldset>
         </form>
- 
-            <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page7.html'),saveData3() ;" >
+        <button id="download" type="submit" >Next</button>
+            <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page7.html'),saveData3() ;" > -->
         </div>
 
         <div class="flex-child">
              
             
-            <div class="main_div"  style="width:45%; height:25%; margin-left: 120px;">
+            <div class="main_div"  style="width:50%; height:25%; margin-left: 120px;">
                 
                 <img id="img3" src="./images/Q3.png" alt="">
                 <div id="one13"></div>
@@ -960,6 +960,9 @@
         </script> -->
      
 </body>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
 </html>
 <script>
 function saveData3() {
@@ -1007,6 +1010,24 @@ function saveData3() {
 </script>
 
 <script>
+    const downloadB = document.getElementById("download");
+
+    downloadB.addEventListener("click", function() {
+    // Get the element you want to screenshot
+    const element = document.getElementById("my-di");
+
+    // Use html2canvas to take a screenshot of the element
+    html2canvas(element).then(function(canvas) {
+        // Create a new link element to download the image
+        const link = document.createElement('a');
+        link.download = 'my-image.png';
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        window.location.replace('page7.html'),saveData3();
+    });
+
+    });
+
     function q113() {
         var one13 = document.getElementById("one13").style.backgroundColor = "red"
         var two13 = document.getElementById("two13").style.background = "none"
