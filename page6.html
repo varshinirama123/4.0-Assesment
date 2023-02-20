@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/css/form.css">
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
         .main_div{
@@ -814,14 +814,17 @@
 
 <body>
 
-       <div style = 'margin-bottom:40px;'>
+       <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page5.html'">
-       </div>
+       </div> -->
+       <div>
+        <button onclick="window.location.replace('page5.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;">Back</button>
+      </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;">Strategy and Organisation</h2>
+        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
+            <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;">Strategy and Organisation</h2>
 
             <form id="Degree">
                 <fieldset>
@@ -895,16 +898,49 @@
                 <label onclick="q473()"><input type="radio" name="Finance" value="4"> Quarterly cost/benefit analysis of Industry 4 investment</label><br>
             </fieldset>
         </form>
-        <button id="download" type="submit" >Next</button>
+        <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;margin-bottom: 55px;">Next</button>
+
+        <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page7.html'),saveData3() ;" > -->
         </div>
 
         <div class="flex-child">
              
+            <div style="position: relative; top: 580px; width: 160px; margin-left: 190px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Degree of strategy</h></br>
+                <h>implementation</h>
+            </div>
+            
+            <div style="position: relative; top: 620px; width:125px; margin-left: 390px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Measurement</h>
+            </div>
+            
+            <div style="position: relative; top: 718px; width:120px; margin-left: 410px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Investments</h>
+            </div>
+
+            <div style="position: relative; top: 813px; width:120px; margin-left: 305px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>People</h><br>
+                <h>capabilities</h>
+            </div>
+
+            <div style="position: relative; top: 765px; width: 125px; margin-left: 110px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Collaboration</h>
+            </div>
+
+            <div style="position: relative; top: 625px; width:120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Leadership</h>
+            </div>
+
+            <div style="position: relative; top: 478px; width:95px; margin-left: 45px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Finance</h>
+            </div>
+
+
             
             <div class="main_div"  style="width:50%; height:25%; margin-left: 120px;">
                 
-                <img id="img3" src="./images/Q3.png" alt="">
+                <img id="img3" src="/images/Q3.png" alt="">
                 <div id="one13"></div>
                 <div id="two13"></div>
                 <div id="three13"></div>
@@ -1020,7 +1056,7 @@ function saveData3() {
     html2canvas(element).then(function(canvas) {
         // Create a new link element to download the image
         const link = document.createElement('a');
-        link.download = 'my-image.png';
+        link.download = 'page6.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         window.location.replace('page7.html'),saveData3();

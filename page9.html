@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/css/form.css">
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
         .main_div{
             /* border: 1px solid yellow; */
             transform: translateY(-200px);
+
         }
         #one16 {
             /* border: 1px solid red; */
@@ -483,14 +484,17 @@
 
 <body>
 
-       <div style = 'margin-bottom:40px;'>
+       <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page8.html'">
-       </div>
+       </div> -->
+       <div>
+        <button onclick="window.location.replace('page8.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;">Back</button>
+      </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;">Legal Considerations</h2>
+        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
+            <h2 style="display:inline-block;width:auto;margin-left: 200px;font-size: 32px;font-style: oblique;font: bolder;">Legal Considerations</h2>
 
             <form id="Contracting_models">
                 <fieldset>
@@ -534,18 +538,39 @@
                     <label onclick="q446()"><input type="radio" name="Intellectual_property" value="4"> Intellectual property in products and services is identified and assessments made as to whether registrations/ contractual rights required and, if required, appropriate steps taken</label><br>
                 </fieldset>
             </form>
-            
-            <button id="download" type="submit">Submit</button>
+
+            <button id="download" type="submit" onclick="return confirm('Are you sure?')" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;margin-bottom: 55px;">Submit</button>
+            <!-- <button id="download" type="submit">Submit</button> -->
             
 
         </div>
 
         <div class="flex-child">
              
+            <div style="position: relative; top: 400px; width: 120px; margin-left: 285px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Contracting</h></br>
+                <h>models</h>
+            </div>
+            
+            <div style="position: relative; top: 552px; width:80px; margin-left: 510px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Risk</h>
+            </div>
+            
+            <div style="position: relative; top: 705px; width:120px; margin-left: 285px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Data</h><br>
+                <h>protection</h>
+            </div>
+
+            <div style="position: relative; top: 470px; width:110px; margin-left: 65px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Intellectual</h><br>
+                <h>property</h>
+            </div>
+
+
             
             <div class="main_div"  style="width:80%; height:40%; margin-left: 120px;">
                 
-                <img id="img6" src="./images/Q6.PNG" alt="">
+                <img id="img6" src="/images/Q6.PNG" alt="">
                 <div id="one16"></div>
                 <div id="two16"></div>
                 <div id="three16"></div>
@@ -631,7 +656,7 @@ function saveData6() {
     html2canvas(element).then(function(canvas) {
         // Create a new link element to download the image
         const link = document.createElement('a');
-        link.download = 'my-image.png';
+        link.download = 'page9.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         window.location.replace('page10.html'),saveData6();

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/css/form.css">
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
         .main_div{
@@ -588,14 +588,17 @@
 
 <body>
 
-       <div style = 'margin-bottom:40px;'>
+       <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page6.html'">
-       </div>
+       </div> -->
+       <div>
+        <button onclick="window.location.replace('page6.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;">Back</button>
+      </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;">Supply Chain</h2>
+        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
+            <h2 style="display:inline-block;width:auto;margin-left: 240px;font-size: 32px;font-style: oblique;font: bolder;">Supply Chain</h2>
 
             <form id="Data_management">
                 <fieldset>
@@ -650,16 +653,42 @@
                 </fieldset>
             </form> 
 
-            <button id="download" type="submit" >Next</button>
+            <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;margin-bottom: 55px;">Next</button>
+            <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page8.html'),saveData4() ;" > -->
         </div>
 
         <div class="flex-child">
              
+            <div style="position: relative; top: 433px; width: 160px; margin-left: 278px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Inventory control</h></br>
+                <h>using real-time</h></br>
+                <h>data management</h>
+            </div>
+            
+            <div style="position: relative; top: 540px; width:120px; margin-left: 565px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Supply chain</h><br>
+                <h>integration</h>
+            </div>
+            
+            <div style="position: relative; top: 751px; width:120px; margin-left: 445px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Supply chain</h><br>
+                <h>visibility</h>
+            </div>
+
+            <div style="position: relative; top: 704px; width:120px; margin-left: 154px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Supply chain</h><br>
+                <h>flexibility</h>
+            </div>
+
+            <div style="position: relative; top: 415px; width: 110px; margin-left: 35px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Lead times</h>
+            </div>
+
             
             <div  class="main_div"  style="width:80%; height:40%; margin-left: 120px;">
                 
-                <img id="img4" src="./images/Q4.png" alt="">
+                <img id="img4" src="/images/Q4.png" alt="">
                 <div id="one14"></div>
                 <div id="two14"></div>
                 <div id="three14"></div>
@@ -757,7 +786,7 @@ function saveData4() {
     html2canvas(element).then(function(canvas) {
         // Create a new link element to download the image
         const link = document.createElement('a');
-        link.download = 'my-image.png';
+        link.download = 'page7.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         window.location.replace('page8.html'),saveData4();

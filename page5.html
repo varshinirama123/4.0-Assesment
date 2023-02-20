@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/css/form.css">
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
         .main_div{
@@ -1151,14 +1151,18 @@
 </head>
 <body>
 
-       <div style = 'margin-bottom:40px;'>
-            <input type="button" value="Back" class="back-button" onclick="window.location.href='Free Industry 4.0 Assesment.html'">
-       </div>
+       <!-- <div style = 'margin-bottom:40px;'>
+            <input type="button" value="Back" class="back-button" onclick="window.location.href='page4.html'">
+       </div> -->
+       <div>
+        <button onclick="window.location.replace('page4.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;">Back</button>
+      </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;">Manufacturing and Operations</h2>
+        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
+            <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;" id="h">Manufacturing and Operations</h2>
+
 
             <form id="Automation">
                 <fieldset>
@@ -1173,7 +1177,7 @@
             
             <form id="M2M">
                 <fieldset >
-                    <legend>2. Digital features of products</legend>
+                    <legend>2. Machine and operation system integration (M2M)</legend>
                     <label onclick="q122()"><input type="radio" name="M2M" value="1"> Machines and systems have no M2M capability</label><br>
                     <label onclick="q222()"><input type="radio" name="M2M" value="2"> Machines and systems are to some extent interoperable</label><br>
                     <label onclick="q322()"><input type="radio" name="M2M" value="3"> Machines and systems are partially integrated</label><br>
@@ -1262,16 +1266,69 @@
           <label onclick="q4102()"><input type="radio" name="IT" value="4"> IT security solutions have been implemented for all relevant areas and are reviewed frequently to ensure compliance</label><br>
       </fieldset>
   </form>
+  <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000; margin-bottom: 55px;">Next</button>
+
            
-        <button id="download" type="submit" >Next</button>
+        <!-- <button id="download" type="submit" >Next</button> -->
         </div>
 
-        <div class="flex-child">
+        <div class="flex-child" style="position: relative;">
              
+            <div style="position: absolute; top: 630px; width: 130px; margin-left: 380px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Automation</h>
+            </div>
             
+            <div style="position: absolute; top: 670px; width:125px; margin-left: 520px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Machine and</h></br>
+                <h>operation system</h></br>
+                <h>integration</h>
+            </div>
+            
+            <div style="position: absolute; top: 815px; width:120px; margin-left: 530px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Equipment readiness</h></br>
+                <h>for Industry 4</h>
+            </div>
+
+            <div style="position: absolute; top: 930px; width:120px; margin-left: 520px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Autonomously</h><br>
+                <h>guided workpieces</h>
+            </div>
+
+            <div style="position: absolute; top: 1050px; width: 125px; margin-left: 380px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Self-optimising</h></br>
+                <h>processes</h>
+            </div>
+
+            <div style="position: absolute; top: 1050px; width:120px; margin-left: 200px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Digital</h></br>
+                <h>modelling</h>
+            </div>
+
+            <div style="position: absolute; top: 930px; width:100px; margin-left: 80px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Operations</h></br>
+                <h>data</h></br>
+                <h>collection</h>
+            </div>
+
+            <div style="position: absolute; top: 830px; width:125px; margin-left: 40px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Operations</h></br>
+                <h>data usage</h>
+            </div>
+            
+            <div style="position: absolute; top: 710px; width:120px; margin-left: 60px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Cloud</h></br>
+                <h>solution usage</h>
+            </div>
+
+            <div style="position: absolute; top: 609px; width:120px; margin-left: 190px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>IT and data</h><br>
+                <h>security</h>
+            </div>
+            
+
             <div class="main_div"  style="width:70%; height:25%; margin-left: 120px;">
                 
-                <img id="img2" src="./images/Q2.png" alt="">
+                <img id="img2" src="/images/Q2.png" alt="">
                 <div id="one12"></div>
                 <div id="two12"></div>
                 <div id="three12"></div>
@@ -1413,7 +1470,7 @@ function saveData2() {
     html2canvas(element).then(function(canvas) {
         // Create a new link element to download the image
         const link = document.createElement('a');
-        link.download = 'my-image.png';
+        link.download = 'page5.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         window.location.replace('page6.html'),saveData2();

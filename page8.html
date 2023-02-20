@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/css/form.css">
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
         .main_div{
@@ -693,14 +693,17 @@
 
 <body>
 
-       <div style = 'margin-bottom:40px;'>
+       <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page7.html'">
-       </div>
+       </div> -->
+       <div>
+        <button onclick="window.location.replace('page7.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;">Back</button>
+      </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div  style="display:inline-block;width:49%;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;">Business Model</h2>
+        <div  style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
+            <h2 style="display:inline-block;width:auto;margin-left: 230px;font-size: 32px;font-style: oblique;font: bolder;">Business Model</h2>
 
             <form id="Business_model">
                 <fieldset>
@@ -765,15 +768,48 @@
               </fieldset>
           </form>
           
-            <button id="download" type="submit" >Next</button>
+          <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;margin-bottom: 55px;">Next</button>
+            <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page9.html'),saveData5() ;" > -->
         </div>
 
         <div  class="flex-child">
+
+            <div style="position: relative; top: 660px; width: 160px; margin-left: 200px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>'As a service'</h></br>
+                <h>business model</h>
+            </div>
+            
+            <div style="position: relative; top: 699px; width:110px; margin-left: 425px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Data driven</h><br>
+                <h>decisions</h>
+            </div>
+            
+            <div style="position: relative; top: 835px; width:110px; margin-left: 420px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Real-time</h><br>
+                <h>tracking</h>
+            </div>
+
+            <div style="position: relative; top: 890px; width:130px; margin-left: 210px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Real-time and</h><br>
+                <h>automated scheduling</h>
+            </div>
+
+            <div style="position: relative; top: 715px; width: 120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>Integrated</h></br>
+                <h>marketing</h></br>
+                <h>channels</h>
+            </div>
+
+            <div style="position: relative; top: 480px; width:120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
+                <h>IT supported</h><br>
+                <h>business</h>
+            </div>
+
              
             <div class="main_div"  style="width:55%; height:35%; margin-left: 120px;">
                 
-                <img id="img5" src="./images/Q5.PNG" alt="">
+                <img id="img5" src="/images/Q5.PNG" alt="">
                 <div id="one15"></div>
                 <div id="two15"></div>
                 <div id="three15"></div>
@@ -832,10 +868,6 @@
 function saveData5() {
     // localStorage.clear();
 
-    if (document.querySelector('input[name="Customisation"]:checked')) {
-        localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
-    }
-
     if (document.querySelector('input[name="Business_model"]:checked')) {
         localStorage.setItem("Business_model", document.querySelector('input[name="Business_model"]:checked').value);
     }
@@ -880,7 +912,7 @@ function saveData5() {
     html2canvas(element).then(function(canvas) {
         // Create a new link element to download the image
         const link = document.createElement('a');
-        link.download = 'my-image.png';
+        link.download = 'page8.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         window.location.replace('page9.html'),saveData5();
