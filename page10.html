@@ -17,38 +17,38 @@
 
             #one17 {
                 /* border: 1px solid red; */
-                /* background-color: aquamarine; */
+                background-color: aquamarine;
                 width: 10px;
                 height: 10px;
                 border-radius: 30px;
-                transform: translateY(-314px);
+                transform: translateY(-114px);
                 margin-left: 150px;
             }
             #two17 {
                 /* border: 1px solid red; */
-                /* background-color: aquamarine; */
+                background-color: aquamarine;
                 width: 10px;
                 height: 10px;
                 border-radius: 30px;
-                transform: translateY(-352px);
+                transform: translateY(-152px);
                 margin-left: 150px;
             }
             #three17 {
                 /* border: 1px solid red; */
-                /* background-color: aquamarine; */
+                background-color: aquamarine;
                 width: 10px;
                 height: 10px;
                 border-radius: 30px;
-                transform: translateY(-391px);
+                transform: translateY(-191px);
                 margin-left: 149px;
             }
             #four17 {
                 /* border: 1px solid red; */
-                /* background-color: aquamarine; */
+                background-color: aquamarine;
                 width: 10px;
                 height: 10px;
                 border-radius: 30px;
-                transform: translateY(-430px);
+                transform: translateY(-130px);
                 margin-left: 149px;
             }
             #five17 {
@@ -553,27 +553,28 @@
             return total + parseInt(value);
         }, 0);
         var average1 = sum / filteredValues.length;
-
-        document.getElementById("average-value1").innerHTML = isNaN(average1) ? "-" : average1.toFixed(1);
+        
+        // document.getElementById("average-value1").innerHTML = isNaN(average1) ? "-" : average1.toFixed(1);
         if (average1<=1) {
+            console.log("hiiiiiiiii")
             q117();
         }
         if (average1>1 && average1<2) {
             q217();
         }
-        if (average1=2) {
+        if (average1===2) {
             q317();
         }
         if (average1>2 && average1<3) {
             q417();
         }
-        if (average1=3) {
+        if (average1===3) {
             q517();
         }
         if (average1>3 && average1<4) {
             q617();
         }
-        if (average1=4) {
+        if (average1===4) {
             q717();
         }
 

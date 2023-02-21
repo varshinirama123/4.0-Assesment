@@ -6,7 +6,7 @@ const nodeProcess = spawn('node', ['node.js']);
 nodeProcess.on('close', (code) => {
     console.log(`node.js exited with code ${code}`);
     // Run app.js
-    
+    console.log("server is running on http://localhost:3000/")
     if(code === 0){
         const appProcess = spawn('node', ['app.js']);
 
