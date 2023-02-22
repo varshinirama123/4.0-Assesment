@@ -488,7 +488,7 @@
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page8.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page8.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;">Back</button>
+        <button onclick="window.location.replace('page8.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
@@ -539,7 +539,7 @@
                 </fieldset>
             </form>
 
-            <button id="download" type="submit" onclick="return confirm('Are you sure?')" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: 2px 2px 4px #000000;margin-bottom: 55px;">Submit</button>
+            <button id="download" type="submit" onclick="return confirm('Are you sure?')" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;margin-bottom: 55px;">Submit</button>
             <!-- <button id="download" type="submit">Submit</button> -->
             
 
@@ -650,18 +650,23 @@ function saveData6() {
 
     downloadB.addEventListener("click", function() {
     // Get the element you want to screenshot
-    const element = document.getElementById("my-di");
-
-    // Use html2canvas to take a screenshot of the element
+    const element = document.getElementById('my-di');
     html2canvas(element).then(function(canvas) {
-        // Create a new link element to download the image
         const link = document.createElement('a');
         link.download = 'page9.png';
-        link.href = canvas.toDataURL("image/png");
+        const binaryData = atob(canvas.toDataURL("image/png").split(',')[1]);
+        const arrayBuffer = new ArrayBuffer(binaryData.length);
+        const uint8Array = new Uint8Array(arrayBuffer);
+        for (let i = 0; i < binaryData.length; i++) {
+            uint8Array[i] = binaryData.charCodeAt(i);
+        }
+        const file = new File([arrayBuffer], 'page9.png', { type: 'image/png' });
+        file.webkitRelativePath = './files/page9.png';
+        link.href = URL.createObjectURL(file);
         link.click();
-        window.location.replace('page10.html'),saveData6();
-    });
-
+        window.location.replace('page10.html');
+        saveData6();
+        });
     });
 
     function q116() {

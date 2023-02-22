@@ -3,6 +3,9 @@
   "dependencies": {
  
    
+  "downloads-folder": "^3.0.3",
+ 
+   
   "jspdf": "^2.5.1",
  
    
@@ -19,13 +22,6 @@
  
    
   "puppeteer-core": "^19.7.1"
- 
-  },
- 
-  "devDependencies": {
- 
-   
-  "browserify": "^17.0.0"
  
   }
 }

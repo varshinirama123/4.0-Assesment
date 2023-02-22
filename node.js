@@ -1,5 +1,5 @@
 const fs = require('fs');
-const folderName = 'my_new_folder';
+const folderName = 'files';
 
 if (!fs.existsSync(folderName)) {
     fs.mkdirSync(folderName);
