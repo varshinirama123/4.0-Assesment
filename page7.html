@@ -586,21 +586,26 @@
     </style> 
 </head>
 
-<body>
+<body style="background-color: #FFFFEA ;">
 
        <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page6.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page6.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Back</button>
+        <button onclick="window.location.replace('page6.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;margin-left: 240px;font-size: 32px;font-style: oblique;font: bolder;">Supply Chain</h2>
-
-            <form id="Data_management">
+        <div style="display:inline-block;width:49%"class="flex-child">
+            <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
+                <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
+                <img height= "50px" src="/images/logo.png" alt="logo">
+            </header>
+            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+                <h2 style="display:inline-block;width:auto;margin-left: 240px;font-size: 32px;font-style: oblique;font: bolder;color: beige;">Supply Chain</h2>
+            </div>
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Data_management">
                 <fieldset>
                     <legend>1. Inventory control using real-time data management</legend>
                     <label onclick="q114()"><input type="radio" name="Data_management" value="1"> Inventory levels are understood</label><br>
@@ -611,7 +616,7 @@
                 
             </form>
             
-            <form id="Integration">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Integration">
                 <fieldset >
                     <legend>2. Supply chain integration</legend>
                     <label onclick="q124()"><input type="radio" name="Integration" value="1"> Ad hoc reactive communication with suppliers and customers</label><br>
@@ -622,7 +627,7 @@
                 
             </form>
             
-            <form id="Chain_visibility">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Chain_visibility">
                 <fieldset >
                     <legend>3. Supply chain visibility</legend>
                     <label onclick="q134()"><input type="radio" name="Chain_visibility" value="1"> No integration with suppliers or customers</label><br>
@@ -633,7 +638,7 @@
                 
             </form>
     
-            <form id="Chain_flexibility">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Chain_flexibility">
                 <fieldset >
                     <legend>4. Supply chain flexibility</legend>
                     <label onclick="q144()"><input type="radio" name="Chain_flexibility" value="1"> Slow response to market changes</label><br>
@@ -643,7 +648,7 @@
                 </fieldset>
             </form>
             
-            <form id="Lead_times">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Lead_times">
                 <fieldset >
                     <legend>5. Lead times</legend>
                     <label onclick="q154()"><input type="radio" name="Lead_times" value="1"> Long materials lead time resulting in high inventory levels</label><br>
@@ -653,7 +658,7 @@
                 </fieldset>
             </form> 
 
-            <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;margin-bottom: 55px;">Next</button>
+            <button id="download" type="submit" style="transform: translateY(40px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
             <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page8.html'),saveData4() ;" > -->
         </div>
@@ -733,7 +738,7 @@
             }
         </script> -->
      
-</body>
+</body style="background-color: #FFFFEA ;">
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 

@@ -1149,22 +1149,27 @@
 
     
 </head>
-<body>
+<body style="background-color: #FFFFEA" >
 
        <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page4.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page4.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Back</button>
+        <button onclick="window.location.replace('page4.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;" id="h">Manufacturing and Operations</h2>
+        <div style="display:inline-block;width:49%"class="flex-child">
+            <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
+                <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
+                <img height= "50px" src="/images/logo.png" alt="logo">
+            </header>
+            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+                <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;color: beige;" id="h">Manufacturing and Operations</h2>
+            </div>
 
-
-            <form id="Automation">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Automation">
                 <fieldset>
                     <legend>1. Automation</legend>
                     <label onclick="q112()"><input type="radio" name="Automation" value="1"> Few machines can be controlled through automation</label><br>
@@ -1175,7 +1180,7 @@
                 
             </form>
             
-            <form id="M2M">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="M2M">
                 <fieldset >
                     <legend>2. Machine and operation system integration (M2M)</legend>
                     <label onclick="q122()"><input type="radio" name="M2M" value="1"> Machines and systems have no M2M capability</label><br>
@@ -1186,7 +1191,7 @@
                 
             </form>
             
-            <form id="readiness">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="readiness">
                 <fieldset >
                     <legend>3. Equipment readiness for Industry 4</legend>
                     <label onclick="q132()"><input type="radio" name="readiness" value="1"> Significant overhaul required to meet Industry 4 model</label><br>
@@ -1197,7 +1202,7 @@
                 
             </form>
     
-            <form id="Autonomous">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Autonomous">
                 <fieldset >
                     <legend>4. Autonomously guided workpieces</legend>
                     <label onclick="q142()"><input type="radio" name="Autonomous" value="1"> Autonomously guided workpieces are not in use</label><br>
@@ -1207,7 +1212,7 @@
                 </fieldset>
             </form>
             
-            <form id="Self_optimising">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Self_optimising">
                 <fieldset >
                     <legend>5. Self-optimisingprocesses</legend>
                     <label onclick="q152()"><input type="radio" name="Self_optimising" value="1"> Self-optimisation processes are not in use</label><br>
@@ -1217,7 +1222,7 @@
                 </fieldset>
             </form> 
 
-            <form id="Modelling">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Modelling">
               <fieldset >
                   <legend>6. Digital modelling</legend>
                   <label onclick="q162()"><input type="radio" name="Modelling" value="1"> No digital modelling</label><br>
@@ -1227,7 +1232,7 @@
               </fieldset>
           </form>
 
-          <form id="Collection">
+          <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Collection">
             <fieldset >
                 <legend>7. Operations data collection</legend>
                 <label onclick="q172()"><input type="radio" name="Collection" value="1"> Data is collected manually when required, e.g. sampling for quality control</label><br>
@@ -1237,7 +1242,7 @@
             </fieldset>
         </form>
 
-        <form id="Op_data_usage">
+        <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Op_data_usage">
           <fieldset >
               <legend>8. Operations data usage</legend>
               <label onclick="q182()"><input type="radio" name="Op_data_usage" value="1"> Data is only used for quality and regulatory purposes</label><br>
@@ -1247,7 +1252,7 @@
           </fieldset>
       </form>
 
-      <form id="Solution_usage">
+      <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Solution_usage">
         <fieldset >
             <legend>9. Cloud solution usage</legend>
             <label onclick="q192()"><input type="radio" name="Solution_usage" value="1"> Cloud solutions not in use</label><br>
@@ -1257,7 +1262,7 @@
         </fieldset>
     </form>
 
-    <form id="IT">
+    <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="IT">
       <fieldset >
           <legend>10. IT and data security</legend>
           <label onclick="q1102()"><input type="radio" name="IT" value="1"> IT security solutions are planned</label><br>
@@ -1266,7 +1271,7 @@
           <label onclick="q4102()"><input type="radio" name="IT" value="4"> IT security solutions have been implemented for all relevant areas and are reviewed frequently to ensure compliance</label><br>
       </fieldset>
   </form>
-  <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; margin-bottom: 55px;">Next</button>
+  <button id="download" type="submit" style="transform: translateY(25px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Next</button>
 
            
         <!-- <button id="download" type="submit" >Next</button> -->
@@ -1397,7 +1402,7 @@
             }
         </script> -->
      
-</body>
+</body style="background-color: #FFFFEA ;">
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </html>

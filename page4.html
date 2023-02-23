@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/form.css">
     <!-- <script type="text/javascript" src="storage.js"></script> -->
     <style>
+        
         .main_div{
             /* border: 1px solid yellow; */
             transform: translateY(-300px);
@@ -589,31 +590,35 @@
 
     </style>
     
-    <script language="javascript" type="text/javascript" src="asd.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="asd.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 
   
     
 </head>
-<body>
+<body style="background-color: #FFFFEA ;" id="my-id">
     
 
     <div>
-        <button onclick="window.location.replace('page3.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Back</button>
+        <button onclick="window.location.replace('page3.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
+      
+      <div  id="my-di" class="flex-container">
+        <!-- <img height= "50px" style="align-items:baseline;" src="https://mantixdigital.com/wp-content/uploads/2023/01/logo.png" alt="logo"> -->
 
-      <div id="my-di" class="flex-container">
-        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
-            <header style="display: flex;justify-content: space-around; background-color: #cdcdcd;">
-                <h1 style="color:#0070c0;">MANTIX DIGITAL</h1>
-                <img height= "50px" style="align-items:baseline;" src="https://mantixdigital.com/wp-content/uploads/2023/01/logo.png" alt="logo">
-                </header>
-        
-            <h2 style="display:inline-block;width:auto;margin-left: 180px;font-size: 32px;font-style: oblique;font: bolder;" id="h">Products and Services</h2>
-        <form name="form1" action="next.html" method="get">
+        <div style="display:inline-block;width:49%"class="flex-child">
+            <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
+                <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
+                <img height= "50px" src="/images/logo.png" alt="logo">
+            </header>
+        <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+            <h2 style="display:inline-block;width:auto;margin-left: 180px;font-size: 32px;font-style: oblique;font: bold;color: beige" id="h">Products and Services</h2>
+        </div>
             
-            <form id="product-customisation">
+        <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" name="form1"  method="get">
+            
+            <form style="background-color: #00425A;" id="product-customisation">
                 <fieldset>
                     <legend id="product">1. Product customisation</legend>
                     <label id="product1" onclick="q111()"><input type="radio" name="Customisation" value="1"> Product allows for no individualisation, standardised mass production</label><br>
@@ -624,7 +629,7 @@
                 
             </form>
             
-            <form id="Digital-features">
+            <form style="transform: translateY(40px);background-color: #00425A; color: beige;" id="Digital-features">
                 <fieldset >
                     <legend id="digital">2. Digital features of products</legend>
                     <label id="digital1" onclick="q121()"><input type="radio" name="Digital features" value="1"> Products show only physical value</label><br>
@@ -633,9 +638,9 @@
                     <label id="digital4" onclick="q421()"><input type="radio" name="Digital features" value="4"> Products exhibit high digital features and value from intellectual property licensing</label><br>
                 </fieldset>
                 
-            </form>
+            </form >
             
-            <form id="Data-driven">
+            <form style="transform: translateY(40px);background-color: #00425A;color: beige;" id="Data-driven">
                 <fieldset >
                     <legend id="data">3. Data-driven services</legend>
                     <label id="data1" onclick="q131()"><input type="radio" name="Data-driven services" value="1"> Data-driven services are offered without customer integration</label><br>
@@ -646,7 +651,7 @@
                 
             </form>
     
-            <form id="data-usage">
+            <form style="transform: translateY(40px);background-color: #00425A;color: beige" id="data-usage">
                 <fieldset >
                     <legend id="usage">4. Level of product data usage</legend>
                     <label id="usage1" onclick="q141()"><input type="radio" name="Data usage" value="1"> Data is not used</label><br>
@@ -656,7 +661,7 @@
                 </fieldset>
             </form>
             
-            <form id="share-of-revenue">
+            <form style="transform: translateY(40px);background-color: #00425A;color: beige" id="share-of-revenue">
                 <fieldset >
                     <legend id="revenue">5. Share of revenue</legend>
                     <label id="revenue1" onclick="q151()"><input type="radio" name="Revenue share" value="1"> Data-driven services account for an initial share of revenue (<2.5%)</label><br>
@@ -667,7 +672,7 @@
                 
             </form> 
         </form> 
-            <button id="download" type="submit"onclick="testJS()" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
+            <button id="download" type="submit"onclick="testJS()" style="transform: translateY(40px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page5.html'),saveData1() ;"> -->
             
         </div>
@@ -702,7 +707,7 @@
                 <h>revenue</h>
             </div>
 
-            <div class="main_div"  style="width:70%; height:40%; margin-left: 120px;">
+            <div class="main_div"   style=" width:70%; height:40%; margin-left: 120px;">
                 
                 <img id="img1" src="/images/Q1.png" alt="">
                 <div id="one11"></div>
@@ -744,18 +749,20 @@
 
     downloadB.addEventListener("click", function() {
     // Get the element you want to screenshot
+    
     const element = document.getElementById("my-di");
-
+    
     // Use html2canvas to take a screenshot of the element
     html2canvas(element).then(function(canvas) {
-        
         // Create a new link element to download the image
+        
         const link = document.createElement('a');
         link.download = 'page4.png';
         link.href = canvas.toDataURL("image/png");
         link.click();
         window.location.replace('page5.html'),saveData1();
     });
+    
 
     });
 

@@ -812,21 +812,26 @@
     </style> 
 </head>
 
-<body>
+<body style="background-color: #FFFFEA ;">
 
        <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page5.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page5.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: rgba(12, 12, 12, 0.444); color: rgba(245, 245, 245, 0.9); padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Back</button>
+        <button onclick="window.location.replace('page5.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
         
-        <div style="display:inline-block;width:49%;background-color: beige;"class="flex-child">
-            <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;">Strategy and Organisation</h2>
-
-            <form id="Degree">
+        <div style="display:inline-block;width:49%"class="flex-child">
+            <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
+                <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
+                <img height= "50px" src="/images/logo.png" alt="logo">
+            </header>
+            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+                <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;color: beige;">Strategy and Organisation</h2>
+            </div>
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Degree">
                 <fieldset>
                     <legend>1. Degree of strategy implementation</legend>
                     <label onclick="q113()"><input type="radio" name="Degree" value="1"> Industry 4 is recognised at departmental level but is not integrated into the strategy</label><br>
@@ -837,7 +842,7 @@
                 
             </form>
             
-            <form id="Measurement">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Measurement">
                 <fieldset >
                     <legend>2. Measurement</legend>
                     <label onclick="q123()"><input type="radio" name="Measurement" value="1"> KPIs are not focused around Industry 4</label><br>
@@ -848,7 +853,7 @@
                 
             </form>
             
-            <form id="Investments">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Investments">
                 <fieldset >
                     <legend>3. Investments</legend>
                     <label onclick="q133()"><input type="radio" name="Investments" value="1"> Initial Industry 4 investments in one business area</label><br>
@@ -859,7 +864,7 @@
                 
             </form>
     
-            <form id="People_capabilities">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="People_capabilities">
                 <fieldset >
                     <legend>4. People capabilities</legend>
                     <label onclick="q143()"><input type="radio" name="People_capabilities" value="1"> Employees have little or no experience with digital technologies</label><br>
@@ -869,7 +874,7 @@
                 </fieldset>
             </form>
             
-            <form id="Collaboration">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Collaboration">
                 <fieldset >
                     <legend>5. Collaboration</legend>
                     <label onclick="q153()"><input type="radio" name="Collaboration" value="1"> The business operates in functional silos</label><br>
@@ -879,7 +884,7 @@
                 </fieldset>
             </form> 
 
-            <form id="Leadership">
+            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Leadership">
               <fieldset >
                   <legend>6. Leadership</legend>
                   <label onclick="q163()"><input type="radio" name="Leadership" value="1"> Leadership team do not recognise the value of Industry 4 investments</label><br>
@@ -889,7 +894,7 @@
               </fieldset>
           </form>
 
-          <form id="Finance">
+          <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Finance">
             <fieldset >
                 <legend>7. Finance</legend>
                 <label onclick="q173()"><input type="radio" name="Finance" value="1"> No sizeable Industry 4 investment</label><br>
@@ -898,7 +903,7 @@
                 <label onclick="q473()"><input type="radio" name="Finance" value="4"> Quarterly cost/benefit analysis of Industry 4 investment</label><br>
             </fieldset>
         </form>
-        <button id="download" type="submit" style="position: relative; left: 25px; top: 15px; width: 35%; background-color: green; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;margin-bottom: 55px;">Next</button>
+        <button id="download" type="submit" style="transform: translateY(25px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
 
         <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page7.html'),saveData3() ;" > -->
@@ -995,7 +1000,7 @@
             }
         </script> -->
      
-</body>
+</body style="background-color: #FFFFEA ;">
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
