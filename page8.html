@@ -459,6 +459,52 @@
                 transform: translateY(293px);
                 margin-left: -293px;
             }
+            #f1,#f2, #f3, #f4, #f5, #f6, #footer {
+                display: none;
+            }
+            #btn_back{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 45px !important;
+                margin-left: -10px;
+
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 1267px;
+                font-size: 35px;
+
+            }
+            .main_div{
+                transform: translateY(1020px);
+                margin-left: 500px !important;
+
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 300px !important;
+                height: 100px;
+                font-size: 45px;
+                margin-left: -20px;
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1100px;
+                margin-left: -400px;
+                height: 80px;
+                margin-top: 100px;
+
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 1307px !important;
+                margin-left: -1px !important;
+            }
+            #h > h2{
+                font-size: 65px !important;
+                margin-left: 300px !important;
+            }
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -686,6 +732,50 @@
                 transform: translateY(242px);
                 margin-left: -467px;
             }
+            #f1,#f2, #f3, #f4, #f5, #f6, #footer {
+                display: none;
+            }
+            #btn_back {
+                /* border: 1px solid red !important; */
+                width: 130px !important;
+                height: 60px;
+                font-size: 35px !important;
+                margin-left: -10px;
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 961px !important;
+                margin-left: 0px !important;
+            }
+            #h > h2{
+                font-size: 38px !important;
+                margin-left: 300px !important;
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 35px;
+                margin-left: -30px;
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 920px;
+                font-size: 26px;
+            }
+            .main_div{
+                transform: translateX(1100px);
+                margin-top: -100px !important;
+
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1300px;
+                margin-left: -100px;
+                height: 70px;
+                margin-top: 70px;
+
+            }
         }
 
     </style> 
@@ -697,7 +787,7 @@
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page7.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page7.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
+        <button id="btn_back" onclick="window.location.replace('page7.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
@@ -705,12 +795,12 @@
         <div  style="display:inline-block;width:49%"class="flex-child">
             <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
                 <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
-                <img height= "50px" src="/images/logo.png" alt="logo">
+                <img class="logo_man" height= "50px" src="/images/logo.png" alt="logo">
             </header>
-            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+            <div id="h" style="transform: translateY(40px); background-color:#00425A ; width: 692px;margin-left: 26px;">
                 <h2 style="display:inline-block;width:auto;margin-left: 230px;font-size: 32px;font-style: oblique;font: bolder;color: beige;">Business Model</h2>
             </div>
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Business_model">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Business_model">
                 <fieldset>
                     <legend>1. 'As a service' business model</legend>
                     <label onclick="q115()"><input type="radio" name="Business_model" value="1"> No awareness</label><br>
@@ -721,7 +811,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Data_driven">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Data_driven">
                 <fieldset >
                     <legend>2. Data driven decisions</legend>
                     <label onclick="q125()"><input type="radio" name="Data_driven" value="1"> Data is not widely analysed</label><br>
@@ -732,7 +822,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Tracking">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Tracking">
                 <fieldset >
                     <legend>3. Real-time tracking</legend>
                     <label onclick="q135()"><input type="radio" name="Tracking" value="1"> Limited product tracking</label><br>
@@ -743,7 +833,7 @@
                 
             </form>
     
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Automated_scheduling">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Automated_scheduling">
                 <fieldset >
                     <legend>4. Real-time and automated scheduling</legend>
                     <label onclick="q145()"><input type="radio" name="Automated_scheduling" value="1"> Equipment is manually maintained in line with the maintenance schedule</label><br>
@@ -753,7 +843,7 @@
                 </fieldset>
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Marketing_channels">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Marketing_channels">
                 <fieldset >
                     <legend>5. Integrated marketing channels</legend>
                     <label onclick="q155()"><input type="radio" name="Marketing_channels" value="1"> Online presence is separated from offline channels</label><br>
@@ -763,7 +853,7 @@
                 </fieldset>
             </form> 
 
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Business">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Business">
               <fieldset >
                   <legend>6. IT supported business</legend>
                   <label onclick="q165()"><input type="radio" name="Business" value="1"> Main business process supported by IT systems</label><br>
@@ -771,42 +861,51 @@
                   <label onclick="q365()"><input type="radio" name="Business" value="3"> Complete IT support of processes but not fully integrated</label><br>
                   <label onclick="q465()"><input type="radio" name="Business" value="4"> IT systems support all company processes and are integrated</label><br>
               </fieldset>
-          </form>
+            </form>
           
-          <button id="download" type="submit" style="transform: translateY(40px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
-            <!-- <button id="download" type="submit" >Next</button> -->
+            <button id="download" type="submit" style="transform: translateY(40px) translateX(10px); position: relative; left: 15px; top: 15px; width: 30%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
+            
+            <footer id="footer" style="transform: translateY(180px); width: 1480px; margin-left: 20px;">
+                <div style="display: flex; justify-content: space-between; height: 40px; background-color: #bfbfbf;"><h3>MANTIX DIGITAL SOLUTIONS PVT LTD </h3>
+                    <p>© Copyright 2022| Mantix Digital Solutions Pvt Ltd</p>
+                </div>
+                <p>Reg Address: #201, 2nd Floor, SJB Sai Residency, Madinaguda, Hyderabad, Telangana -500050 INDIA.</p>
+                <p style="margin-top: -15px;">Ph: +91-9573212699 | <span>Email: </span><a href="contact@matixdigital.com"> contact@matixdigital.com</a> | <span> Web: </span><a href="www.mantixdigital.com">www.mantixdigital.com</a></p>
+            </footer>
+          
+          <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page9.html'),saveData5() ;" > -->
         </div>
 
-        <div  class="flex-child">
+        <div id="f"  class="flex-child">
 
-            <div style="position: relative; top: 660px; width: 160px; margin-left: 200px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f1" style="position: relative; top: 660px; width: 160px; margin-left: 200px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>'As a service'</h></br>
                 <h>business model</h>
             </div>
             
-            <div style="position: relative; top: 699px; width:110px; margin-left: 425px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f2" style="position: relative; top: 699px; width:110px; margin-left: 425px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Data driven</h><br>
                 <h>decisions</h>
             </div>
             
-            <div style="position: relative; top: 835px; width:110px; margin-left: 420px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f3" style="position: relative; top: 835px; width:110px; margin-left: 420px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Real-time</h><br>
                 <h>tracking</h>
             </div>
 
-            <div style="position: relative; top: 890px; width:130px; margin-left: 210px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f4" style="position: relative; top: 890px; width:130px; margin-left: 210px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Real-time and</h><br>
                 <h>automated scheduling</h>
             </div>
 
-            <div style="position: relative; top: 715px; width: 120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f5" style="position: relative; top: 715px; width: 120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Integrated</h></br>
                 <h>marketing</h></br>
                 <h>channels</h>
             </div>
 
-            <div style="position: relative; top: 480px; width:120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f6" style="position: relative; top: 480px; width:120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>IT supported</h><br>
                 <h>business</h>
             </div>

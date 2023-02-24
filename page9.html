@@ -316,6 +316,52 @@
                 transform: translateY(-35px);
                 margin-left: -280px;
             }
+            #f1,#f2, #f3, #f4, #footer {
+                display: none;
+            }
+            #btn_back{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 45px !important;
+                margin-left: -10px;
+
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 1267px;
+                font-size: 35px;
+
+            }
+            .main_div{
+                transform: translateY(900px);
+                margin-left: 500px !important;
+
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 300px !important;
+                height: 100px;
+                font-size: 45px;
+                margin-left: -20px;
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1100px;
+                margin-left: -400px;
+                height: 80px;
+                margin-top: 100px;
+
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 1307px !important;
+                margin-left: -1px !important;
+            }
+            #h > h2{
+                font-size: 65px !important;
+                margin-left: 300px !important;
+            }
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -471,6 +517,50 @@
                 transform: translateY(353px);
                 margin-left: -466px;
             }
+            #f1,#f2, #f3, #f4, #footer {
+                display: none;
+            }
+            #btn_back {
+                /* border: 1px solid red !important; */
+                width: 130px !important;
+                height: 60px;
+                font-size: 35px !important;
+                margin-left: -10px;
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 961px !important;
+                margin-left: 0px !important;
+            }
+            #h > h2{
+                font-size: 38px !important;
+                margin-left: 300px !important;
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 35px;
+                margin-left: -30px;
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 920px;
+                font-size: 26px;
+            }
+            .main_div{
+                transform: translateX(1100px);
+                margin-top: -100px !important;
+
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1300px;
+                margin-left: -100px;
+                height: 70px;
+                margin-top: 70px;
+
+            }
         }
         /* #download{
             border: 1px solid red;
@@ -488,7 +578,7 @@
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page8.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page8.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
+        <button id="btn_back" onclick="window.location.replace('page8.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
@@ -496,12 +586,12 @@
         <div style="display:inline-block;width:49%"class="flex-child">
             <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
                 <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
-                <img height= "50px" src="/images/logo.png" alt="logo">
+                <img class="logo_man" height= "50px" src="/images/logo.png" alt="logo">
             </header>
-            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+            <div id="h" style="transform: translateY(40px); background-color:#00425A ; width: 692px;margin-left: 26px;">
                 <h2 style="display:inline-block;width:auto;margin-left: 200px;font-size: 32px;font-style: oblique;font: bolder;color: beige;">Legal Considerations</h2>
             </div>
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Contracting_models">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Contracting_models">
                 <fieldset>
                     <legend>1. Contracting models</legend>
                     <label onclick="q116()"><input type="radio" name="Contracting_models" value="1"> Contracting processes are linear and unchanged</label><br>
@@ -512,7 +602,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Risk">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Risk">
                 <fieldset >
                     <legend>2. Risk</legend>
                     <label onclick="q126()"><input type="radio" name="Risk" value="1"> New risks not identified or assessed</label><br>
@@ -523,7 +613,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Data_protection">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Data_protection">
                 <fieldset >
                     <legend>3. Data protection</legend>
                     <label onclick="q136()"><input type="radio" name="Data_protection" value="1"> No data protection policies or procedures</label><br>
@@ -534,7 +624,7 @@
                 
             </form>
     
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Intellectual_property">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Intellectual_property">
                 <fieldset >
                     <legend>4. Intellectual property</legend>
                     <label onclick="q146()"><input type="radio" name="Intellectual_property" value="1"> Intellectual property in new products and services is not identified or protected</label><br>
@@ -544,29 +634,38 @@
                 </fieldset>
             </form>
 
-            <button id="download" type="submit" onclick="return confirm('Are you sure?')" style="transform: translateY(40px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Submit</button>
+            <button id="download" type="submit" onclick="return confirm('Are you sure?')" style="transform: translateY(40px) translateX(10px); position: relative; left: 15px; top: 15px; width: 30%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Submit</button>
+            
+            <footer id="footer" style="transform: translateY(100px); width: 1480px; margin-left: 20px;">
+                <div style="display: flex; justify-content: space-between; height: 40px; background-color: #bfbfbf;"><h3>MANTIX DIGITAL SOLUTIONS PVT LTD </h3>
+                    <p>© Copyright 2022| Mantix Digital Solutions Pvt Ltd</p>
+                </div>
+                <p>Reg Address: #201, 2nd Floor, SJB Sai Residency, Madinaguda, Hyderabad, Telangana -500050 INDIA.</p>
+                <p style="margin-top: -15px;">Ph: +91-9573212699 | <span>Email: </span><a href="contact@matixdigital.com"> contact@matixdigital.com</a> | <span> Web: </span><a href="www.mantixdigital.com">www.mantixdigital.com</a></p>
+            </footer>
+            
             <!-- <button id="download" type="submit">Submit</button> -->
             
 
         </div>
 
-        <div class="flex-child">
+        <div id="f" class="flex-child">
              
-            <div style="position: relative; top: 400px; width: 120px; margin-left: 285px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f1" style="position: relative; top: 400px; width: 120px; margin-left: 285px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Contracting</h></br>
                 <h>models</h>
             </div>
             
-            <div style="position: relative; top: 552px; width:80px; margin-left: 510px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f2" style="position: relative; top: 552px; width:80px; margin-left: 510px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Risk</h>
             </div>
             
-            <div style="position: relative; top: 705px; width:120px; margin-left: 285px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f3" style="position: relative; top: 705px; width:120px; margin-left: 285px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Data</h><br>
                 <h>protection</h>
             </div>
 
-            <div style="position: relative; top: 470px; width:110px; margin-left: 65px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f4" style="position: relative; top: 470px; width:110px; margin-left: 65px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Intellectual</h><br>
                 <h>property</h>
             </div>

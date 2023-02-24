@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static('public'));
 // app.use('/static')
 // create an array of page names
-const pages = ['page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9','page10'];
+const pages = ['page1', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9','page10'];
 
 app.get(`/`, (req, res) => {
     res.sendFile(`${__dirname}/page1.html`);

@@ -539,6 +539,52 @@
                 transform: translateY(317px);
                 margin-left: -297px;
             }
+            #f1,#f2, #f3, #f4, #f5, #f6, #f7, #footer {
+                display: none;
+            }
+            #btn_back{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 45px !important;
+                margin-left: -10px;
+
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 1267px;
+                font-size: 35px;
+
+            }
+            .main_div{
+                transform: translateY(1400px);
+                margin-left: 500px !important;
+
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 300px !important;
+                height: 100px;
+                font-size: 45px;
+                margin-left: -30px;
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1100px;
+                margin-left: -400px;
+                height: 80px;
+                margin-top: 100px;
+
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 1307px !important;
+                margin-left: -1px !important;
+            }
+            #h > h2{
+                font-size: 65px !important;
+                margin-left: 300px !important;
+            }
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -808,6 +854,50 @@
                 transform: translateY(300px);
                 margin-left: -470px;
             }
+            #f1,#f2, #f3, #f4, #f5, #f6, #f7, #footer {
+                display: none;
+            }
+            #btn_back {
+                /* border: 1px solid red !important; */
+                width: 130px !important;
+                height: 60px;
+                font-size: 35px !important;
+                margin-left: -10px;
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 961px !important;
+                margin-left: 0px !important;
+            }
+            #h > h2{
+                font-size: 38px !important;
+                margin-left: 300px !important;
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 35px;
+                margin-left: -30px;
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 920px;
+                font-size: 26px;
+            }
+            .main_div{
+                transform: translateX(1100px);
+                margin-top: -100px !important;
+
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1300px;
+                margin-left: -100px;
+                height: 70px;
+                margin-top: 70px;
+
+            }
         }
     </style> 
 </head>
@@ -818,7 +908,7 @@
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page5.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page5.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
+        <button id="btn_back" onclick="window.location.replace('page5.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
@@ -826,12 +916,12 @@
         <div style="display:inline-block;width:49%"class="flex-child">
             <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
                 <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
-                <img height= "50px" src="/images/logo.png" alt="logo">
+                <img class="logo_man" height= "50px" src="/images/logo.png" alt="logo">
             </header>
-            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
+            <div id="h" style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 27px;">
                 <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;color: beige;">Strategy and Organisation</h2>
             </div>
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Degree">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Degree">
                 <fieldset>
                     <legend>1. Degree of strategy implementation</legend>
                     <label onclick="q113()"><input type="radio" name="Degree" value="1"> Industry 4 is recognised at departmental level but is not integrated into the strategy</label><br>
@@ -842,7 +932,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Measurement">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Measurement">
                 <fieldset >
                     <legend>2. Measurement</legend>
                     <label onclick="q123()"><input type="radio" name="Measurement" value="1"> KPIs are not focused around Industry 4</label><br>
@@ -853,7 +943,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Investments">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Investments">
                 <fieldset >
                     <legend>3. Investments</legend>
                     <label onclick="q133()"><input type="radio" name="Investments" value="1"> Initial Industry 4 investments in one business area</label><br>
@@ -864,7 +954,7 @@
                 
             </form>
     
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="People_capabilities">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="People_capabilities">
                 <fieldset >
                     <legend>4. People capabilities</legend>
                     <label onclick="q143()"><input type="radio" name="People_capabilities" value="1"> Employees have little or no experience with digital technologies</label><br>
@@ -874,7 +964,7 @@
                 </fieldset>
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Collaboration">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Collaboration">
                 <fieldset >
                     <legend>5. Collaboration</legend>
                     <label onclick="q153()"><input type="radio" name="Collaboration" value="1"> The business operates in functional silos</label><br>
@@ -884,7 +974,7 @@
                 </fieldset>
             </form> 
 
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Leadership">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Leadership">
               <fieldset >
                   <legend>6. Leadership</legend>
                   <label onclick="q163()"><input type="radio" name="Leadership" value="1"> Leadership team do not recognise the value of Industry 4 investments</label><br>
@@ -894,7 +984,7 @@
               </fieldset>
           </form>
 
-          <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Finance">
+          <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Finance">
             <fieldset >
                 <legend>7. Finance</legend>
                 <label onclick="q173()"><input type="radio" name="Finance" value="1"> No sizeable Industry 4 investment</label><br>
@@ -903,41 +993,50 @@
                 <label onclick="q473()"><input type="radio" name="Finance" value="4"> Quarterly cost/benefit analysis of Industry 4 investment</label><br>
             </fieldset>
         </form>
-        <button id="download" type="submit" style="transform: translateY(25px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
+        <button id="download" type="submit" style="transform: translateY(25px) translateX(10px); position: relative; left: 20px; top: 20px; width: 30%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
+
+        <footer id="footer" style="transform: translateY(80px); width: 1480px; margin-left: 20px; margin-bottom: 90px;">
+            <div style="display: flex; justify-content: space-between; height: 40px; background-color: #bfbfbf;"><h3>MANTIX DIGITAL SOLUTIONS PVT LTD </h3>
+                <p>© Copyright 2022| Mantix Digital Solutions Pvt Ltd</p>
+            </div>
+            <p>Reg Address: #201, 2nd Floor, SJB Sai Residency, Madinaguda, Hyderabad, Telangana -500050 INDIA.</p>
+                <p style="margin-top: -15px;">Ph: +91-9573212699 | <span>Email: </span><a href="contact@matixdigital.com"> contact@matixdigital.com</a> | <span> Web: </span><a href="www.mantixdigital.com">www.mantixdigital.com</a></p>
+        </footer>
+
 
         <!-- <button id="download" type="submit" >Next</button> -->
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page7.html'),saveData3() ;" > -->
         </div>
 
-        <div class="flex-child">
+        <div id="f" class="flex-child">
              
-            <div style="position: relative; top: 580px; width: 160px; margin-left: 190px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f1" style="position: relative; top: 580px; width: 160px; margin-left: 190px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Degree of strategy</h></br>
                 <h>implementation</h>
             </div>
             
-            <div style="position: relative; top: 620px; width:125px; margin-left: 390px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f2" style="position: relative; top: 620px; width:125px; margin-left: 390px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Measurement</h>
             </div>
             
-            <div style="position: relative; top: 718px; width:120px; margin-left: 410px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f3" style="position: relative; top: 718px; width:120px; margin-left: 410px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Investments</h>
             </div>
 
-            <div style="position: relative; top: 813px; width:120px; margin-left: 305px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f4" style="position: relative; top: 813px; width:120px; margin-left: 305px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>People</h><br>
                 <h>capabilities</h>
             </div>
 
-            <div style="position: relative; top: 765px; width: 125px; margin-left: 110px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f5" style="position: relative; top: 765px; width: 125px; margin-left: 110px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Collaboration</h>
             </div>
 
-            <div style="position: relative; top: 625px; width:120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f6" style="position: relative; top: 625px; width:120px; margin-left: 2px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Leadership</h>
             </div>
 
-            <div style="position: relative; top: 478px; width:95px; margin-left: 45px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f7" style="position: relative; top: 478px; width:95px; margin-left: 45px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Finance</h>
             </div>
 

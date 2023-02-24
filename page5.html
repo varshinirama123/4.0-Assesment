@@ -762,6 +762,52 @@
                 transform: translateY(450px);
                 margin-left: -209px;
             }
+            #f1,#f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #footer {
+                display: none;
+            }
+            #btn_back{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 45px !important;
+                margin-left: -10px;
+
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 1267px;
+                font-size: 35px;
+
+            }
+            .main_div{
+                transform: translateY(1800px);
+                margin-left: 500px !important;
+
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 300px !important;
+                height: 100px;
+                font-size: 45px;
+                margin-left: -30px;
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1100px;
+                margin-left: -400px;
+                height: 80px;
+                margin-top: 100px;
+
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 1307px !important;
+                margin-left: -1px !important;
+            }
+            #h > h2{
+                font-size: 65px !important;
+                margin-left: 300px !important;
+            }
         }
 
 
@@ -1143,19 +1189,68 @@
                 transform: translateY(429px);
                 margin-left: -375px;
             }
+            #f1,#f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #footer {
+                display: none;
+                
+            }
+            #btn_back {
+                /* border: 1px solid red !important; */
+                width: 130px !important;
+                height: 50px;
+                font-size: 25px !important;
+                margin-left: -10px;
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 961px !important;
+                margin-left: 0px !important;
+            }
+            #h > h2{
+                font-size: 38px !important;
+                margin-left: 300px !important;
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 35px;
+                margin-left: -30px;
+                margin-bottom: 80px;
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 920px;
+                font-size: 25px;
+            }
+            form4::-webkit-scrollbar{
+                width: 1em;
+            }
+            .main_div{
+                transform: translateX(1100px);
+                margin-top: -100px !important;
+
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1300px;
+                margin-left: -100px;
+                height: 70px;
+                /* margin-top: 20px; */
+
+            }
         }
     </style>
     
 
     
 </head>
-<body style="background-color: #FFFFEA" >
+<body style="background-color: #FFFFEA">
 
        <!-- <div style = 'margin-bottom:40px;'>
             <input type="button" value="Back" class="back-button" onclick="window.location.href='page4.html'">
        </div> -->
        <div>
-        <button onclick="window.location.replace('page4.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
+        <button id="btn_back" onclick="window.location.replace('page4.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
 
        <div id="my-di" class="flex-container" >
@@ -1163,13 +1258,13 @@
         <div style="display:inline-block;width:49%"class="flex-child">
             <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
                 <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
-                <img height= "50px" src="/images/logo.png" alt="logo">
+                <img class="logo_man" height= "50px" src="/images/logo.png" alt="logo">
             </header>
-            <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
-                <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;color: beige;" id="h">Manufacturing and Operations</h2>
+            <div id="h" style="transform: translateY(40px); background-color:#00425A ; width: 692px;margin-left: 26px;">
+                <h2 style="display:inline-block;width:auto;margin-left: 170px;font-size: 32px;font-style: oblique;font: bolder;color: beige;">Manufacturing and Operations</h2>
             </div>
 
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Automation">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Automation">
                 <fieldset>
                     <legend>1. Automation</legend>
                     <label onclick="q112()"><input type="radio" name="Automation" value="1"> Few machines can be controlled through automation</label><br>
@@ -1180,7 +1275,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="M2M">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="M2M">
                 <fieldset >
                     <legend>2. Machine and operation system integration (M2M)</legend>
                     <label onclick="q122()"><input type="radio" name="M2M" value="1"> Machines and systems have no M2M capability</label><br>
@@ -1191,7 +1286,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="readiness">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="readiness">
                 <fieldset >
                     <legend>3. Equipment readiness for Industry 4</legend>
                     <label onclick="q132()"><input type="radio" name="readiness" value="1"> Significant overhaul required to meet Industry 4 model</label><br>
@@ -1202,7 +1297,7 @@
                 
             </form>
     
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Autonomous">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Autonomous">
                 <fieldset >
                     <legend>4. Autonomously guided workpieces</legend>
                     <label onclick="q142()"><input type="radio" name="Autonomous" value="1"> Autonomously guided workpieces are not in use</label><br>
@@ -1212,7 +1307,7 @@
                 </fieldset>
             </form>
             
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Self_optimising">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Self_optimising">
                 <fieldset >
                     <legend>5. Self-optimisingprocesses</legend>
                     <label onclick="q152()"><input type="radio" name="Self_optimising" value="1"> Self-optimisation processes are not in use</label><br>
@@ -1222,7 +1317,7 @@
                 </fieldset>
             </form> 
 
-            <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Modelling">
+            <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Modelling">
               <fieldset >
                   <legend>6. Digital modelling</legend>
                   <label onclick="q162()"><input type="radio" name="Modelling" value="1"> No digital modelling</label><br>
@@ -1232,7 +1327,7 @@
               </fieldset>
           </form>
 
-          <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Collection">
+          <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Collection">
             <fieldset >
                 <legend>7. Operations data collection</legend>
                 <label onclick="q172()"><input type="radio" name="Collection" value="1"> Data is collected manually when required, e.g. sampling for quality control</label><br>
@@ -1242,7 +1337,7 @@
             </fieldset>
         </form>
 
-        <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Op_data_usage">
+        <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Op_data_usage">
           <fieldset >
               <legend>8. Operations data usage</legend>
               <label onclick="q182()"><input type="radio" name="Op_data_usage" value="1"> Data is only used for quality and regulatory purposes</label><br>
@@ -1252,7 +1347,7 @@
           </fieldset>
       </form>
 
-      <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Solution_usage">
+      <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="Solution_usage">
         <fieldset >
             <legend>9. Cloud solution usage</legend>
             <label onclick="q192()"><input type="radio" name="Solution_usage" value="1"> Cloud solutions not in use</label><br>
@@ -1262,7 +1357,7 @@
         </fieldset>
     </form>
 
-    <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="IT">
+    <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" id="IT">
       <fieldset >
           <legend>10. IT and data security</legend>
           <label onclick="q1102()"><input type="radio" name="IT" value="1"> IT security solutions are planned</label><br>
@@ -1270,62 +1365,70 @@
           <label onclick="q3102()"><input type="radio" name="IT" value="3"> Comprehensive IT security solutions have been implemented with plans developed to close any gaps</label><br>
           <label onclick="q4102()"><input type="radio" name="IT" value="4"> IT security solutions have been implemented for all relevant areas and are reviewed frequently to ensure compliance</label><br>
       </fieldset>
-  </form>
-  <button id="download" type="submit" style="transform: translateY(25px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Next</button>
-
+    </form>
+    <button id="download" type="submit" style="transform: translateY(28px) translateX(10px); position: relative; left: 20px; top: 20px; width: 30%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">Next</button>
+  
+  
+    <footer id="footer" style="transform: translateY(80px); width: 1480px; margin-left: 20px; margin-bottom: 90px;">
+        <div style="display: flex; justify-content: space-between; height: 40px; background-color: #bfbfbf;"><h3>MANTIX DIGITAL SOLUTIONS PVT LTD </h3>
+            <p>© Copyright 2022| Mantix Digital Solutions Pvt Ltd</p>
+        </div>
+        <p>Reg Address: #201, 2nd Floor, SJB Sai Residency, Madinaguda, Hyderabad, Telangana -500050 INDIA.</p>
+            <p style="margin-top: -15px;">Ph: +91-9573212699 | <span>Email: </span><a href="contact@matixdigital.com"> contact@matixdigital.com</a> | <span> Web: </span><a href="www.mantixdigital.com">www.mantixdigital.com</a></p>
+    </footer>
            
         <!-- <button id="download" type="submit" >Next</button> -->
         </div>
 
-        <div class="flex-child" style="position: relative;">
+        <div id="f" class="flex-child" style="position: relative;">
              
-            <div style="position: absolute; top: 630px; width: 130px; margin-left: 380px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f1" style="position: absolute; top: 630px; width: 130px; margin-left: 380px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Automation</h>
             </div>
             
-            <div style="position: absolute; top: 670px; width:125px; margin-left: 520px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f2" style="position: absolute; top: 670px; width:125px; margin-left: 520px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Machine and</h></br>
                 <h>operation system</h></br>
                 <h>integration</h>
             </div>
             
-            <div style="position: absolute; top: 815px; width:120px; margin-left: 530px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f3" style="position: absolute; top: 815px; width:120px; margin-left: 530px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Equipment readiness</h></br>
                 <h>for Industry 4</h>
             </div>
 
-            <div style="position: absolute; top: 930px; width:120px; margin-left: 520px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f4" style="position: absolute; top: 930px; width:120px; margin-left: 520px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Autonomously</h><br>
                 <h>guided workpieces</h>
             </div>
 
-            <div style="position: absolute; top: 1050px; width: 125px; margin-left: 380px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f5" style="position: absolute; top: 1050px; width: 125px; margin-left: 380px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Self-optimising</h></br>
                 <h>processes</h>
             </div>
 
-            <div style="position: absolute; top: 1050px; width:120px; margin-left: 200px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f6" style="position: absolute; top: 1050px; width:120px; margin-left: 200px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Digital</h></br>
                 <h>modelling</h>
             </div>
 
-            <div style="position: absolute; top: 930px; width:100px; margin-left: 80px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f7" style="position: absolute; top: 930px; width:100px; margin-left: 80px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Operations</h></br>
                 <h>data</h></br>
                 <h>collection</h>
             </div>
 
-            <div style="position: absolute; top: 830px; width:125px; margin-left: 40px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f8" style="position: absolute; top: 830px; width:125px; margin-left: 40px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Operations</h></br>
                 <h>data usage</h>
             </div>
             
-            <div style="position: absolute; top: 710px; width:120px; margin-left: 60px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f9" style="position: absolute; top: 710px; width:120px; margin-left: 60px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Cloud</h></br>
                 <h>solution usage</h>
             </div>
 
-            <div style="position: absolute; top: 609px; width:120px; margin-left: 190px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f10" style="position: absolute; top: 609px; width:120px; margin-left: 190px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>IT and data</h><br>
                 <h>security</h>
             </div>
@@ -1384,28 +1487,16 @@
                 <div id="three102"></div>
                 <div id="four102"></div>
             </div>
+
+            
        </div>
-    
-
-
-
-        <!-- <script>
-            function saveData2() {
-                
-              localStorage.clear();
-
-              localStorage.setItem("product-customisation", document.querySelector('input[name="Customisation"]:checked').value);
-              localStorage.setItem("digital-features", document.querySelector('input[name="Digital features"]:checked').value);
-              localStorage.setItem("data-driven", document.querySelector('input[name="Data-driven services"]:checked').value);
-              localStorage.setItem("data-usage", document.querySelector('input[name="Data usage"]:checked').value);
-              localStorage.setItem("revenue-share", document.querySelector('input[name="Revenue share"]:checked').value);
-            }
-        </script> -->
-     
-</body style="background-color: #FFFFEA ;">
+        </body style="background-color: #FFFFEA ;">
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </html>
+
+
+
 <script>
 function saveData2() {
     // localStorage.clear();

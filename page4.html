@@ -388,7 +388,54 @@
                 transform: translateY(403px);
                 margin-left: -316px;
             }
-            
+            #f1,#f2, #f3, #f4, #f5, #footer {
+                display: none;
+            }
+            #btn_back{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 45px !important;
+                margin-left: -10px;
+
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 1267px;
+                font-size: 35px;
+
+            }
+            .main_div{
+                transform: translateY(600px);
+                margin-left: 500px !important;
+
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 300px !important;
+                height: 100px;
+                font-size: 45px;
+                margin-left: -30px;
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1100px;
+                margin-left: -400px;
+                height: 80px;
+                margin-top: 100px;
+
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 1307px !important;
+                margin-left: -1px !important;
+            }
+            #h > h2{
+                font-size: 65px !important;
+                margin-left: 300px !important;
+            }
+
+
         }
 
 
@@ -582,14 +629,57 @@
                 transform: translateY(393px);
                 margin-left: -489px;
             }
+            #f1,#f2, #f3, #f4, #f5, #footer {
+                display: none;
+                
+            }
+            #btn_back {
+                /* border: 1px solid red !important; */
+                width: 130px !important;
+                height: 60px;
+                font-size: 35px !important;
+                margin-left: -10px;
+            }
+            #h{
+                /* border: 1px solid red; */
+                width: 961px !important;
+                margin-left: 0px !important;
+            }
+            #h > h2{
+                font-size: 38px !important;
+                margin-left: 300px !important;
+            }
+            #download{
+                /* border: 1px solid red !important; */
+                width: 150px !important;
+                height: 70px;
+                font-size: 35px;
+                margin-left: -30px;
+            }
+            .form4{
+                /* border: 1px solid red; */
+                width: 920px;
+                font-size: 26px;
+            }
+            .main_div{
+                transform: translateX(1100px);
+                margin-top: -100px !important;
+
+            }
+            .logo_man{
+                /* border: 1px solid red; */
+                width: 1300px;
+                margin-left: -100px;
+                height: 70px;
+                margin-top: 70px;
+
+            }
         }
-        /* /////////////////////////////////////////////////////////////////////////////// */
-        
-        
-
-
     </style>
     
+
+
+
     <!-- <script language="javascript" type="text/javascript" src="asd.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
@@ -601,7 +691,7 @@
     
 
     <div>
-        <button onclick="window.location.replace('page3.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
+        <button id="btn_back" onclick="window.location.replace('page1.html')" type="submit" style="position: absolute; font-size: 15px; top: 10px; left: 15px; width: 6%; background-color: #064420;color:#FFFFEA; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;">Back</button>
       </div>
       
       <div  id="my-di" class="flex-container">
@@ -610,15 +700,15 @@
         <div style="display:inline-block;width:49%"class="flex-child">
             <header style="width: 50px;margin-left:800px;align-items: center; display: flex;justify-content: space-around">
                 <!-- <h1 style="color:#0070c0;">MANTIX DIGITAL</h1> -->
-                <img height= "50px" src="/images/logo.png" alt="logo">
+                <img class="logo_man" height= "50px" src="/images/logo.png" alt="logo">
             </header>
-        <div style="transform: translateY(40px); background-color:#00425A ; width: 690px;margin-left: 39px;">
-            <h2 style="display:inline-block;width:auto;margin-left: 180px;font-size: 32px;font-style: oblique;font: bold;color: beige" id="h">Products and Services</h2>
+        <div id="h" style="transform: translateY(40px); background-color:#00425A ; width: 691px;margin-left: 27px;">
+            <h2 style="display:inline-block;width:auto;margin-left: 180px;font-size: 32px;font-style: oblique;font: bold;color: beige" >Products and Services</h2>
         </div>
             
-        <form style="transform: translateY(40px); background-color:#00425A ;color: beige;" name="form1"  method="get">
+        <form class="form4" style="transform: translateY(40px); background-color:#00425A ;color: beige;" name="form1"  method="get">
             
-            <form style="background-color: #00425A;" id="product-customisation">
+            <form class="form4" style="background-color: #00425A;" id="product-customisation">
                 <fieldset>
                     <legend id="product">1. Product customisation</legend>
                     <label id="product1" onclick="q111()"><input type="radio" name="Customisation" value="1"> Product allows for no individualisation, standardised mass production</label><br>
@@ -629,7 +719,7 @@
                 
             </form>
             
-            <form style="transform: translateY(40px);background-color: #00425A; color: beige;" id="Digital-features">
+            <form class="form4" style="transform: translateY(40px);background-color: #00425A; color: beige;" id="Digital-features">
                 <fieldset >
                     <legend id="digital">2. Digital features of products</legend>
                     <label id="digital1" onclick="q121()"><input type="radio" name="Digital features" value="1"> Products show only physical value</label><br>
@@ -640,7 +730,7 @@
                 
             </form >
             
-            <form style="transform: translateY(40px);background-color: #00425A;color: beige;" id="Data-driven">
+            <form class="form4" style="transform: translateY(40px);background-color: #00425A;color: beige;" id="Data-driven">
                 <fieldset >
                     <legend id="data">3. Data-driven services</legend>
                     <label id="data1" onclick="q131()"><input type="radio" name="Data-driven services" value="1"> Data-driven services are offered without customer integration</label><br>
@@ -651,7 +741,7 @@
                 
             </form>
     
-            <form style="transform: translateY(40px);background-color: #00425A;color: beige" id="data-usage">
+            <form class="form4" style="transform: translateY(40px);background-color: #00425A;color: beige" id="data-usage">
                 <fieldset >
                     <legend id="usage">4. Level of product data usage</legend>
                     <label id="usage1" onclick="q141()"><input type="radio" name="Data usage" value="1"> Data is not used</label><br>
@@ -661,7 +751,7 @@
                 </fieldset>
             </form>
             
-            <form style="transform: translateY(40px);background-color: #00425A;color: beige" id="share-of-revenue">
+            <form class="form4" style="transform: translateY(40px);background-color: #00425A;color: beige" id="share-of-revenue">
                 <fieldset >
                     <legend id="revenue">5. Share of revenue</legend>
                     <label id="revenue1" onclick="q151()"><input type="radio" name="Revenue share" value="1"> Data-driven services account for an initial share of revenue (<2.5%)</label><br>
@@ -672,37 +762,37 @@
                 
             </form> 
         </form> 
-            <button id="download" type="submit"onclick="testJS()" style="transform: translateY(40px) translateX(10px); position: relative; left: 25px; top: 15px; width: 35%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
+            <button id="download" type="submit"onclick="testJS()" style="transform: translateY(40px) translateX(10px); position: relative; left: 20px; top: 10px; width: 30%; background-color: #064420; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;">Next</button>
             <!-- <input id="btn_next" type="submit" value="Next" onclick="window.location.replace('page5.html'),saveData1() ;"> -->
             
         </div>
 
         <div id="f" class="flex-child">
 
-            <div style="position: relative; top: 395px; width: 130px; margin-left: 295px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f1" style="position: relative; top: 395px; width: 130px; margin-left: 295px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Product</h></br>
                 <h>Customisation</h>
             </div>
             <!-- <div style="position: relative; top: 324px; width:auto; margin-left: 355px; height: 5%; border-left: 2px solid #0d0d0d;"></div> -->
-            <div style="position: relative; top: 495px; width:100px; margin-left: 565px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f2" style="position: relative; top: 495px; width:100px; margin-left: 565px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Digital</h><br>
                 <h>features of</h><br>
                 <h>Products</h>
             </div>
             <!-- <div style="position: relative; top: 489px; width: 100%; margin-left: 540px; height: 5%; border-left: 2px solid #0d0d0d; transform: rotate(35deg);"></div> -->
 
-            <div style="position: relative; top: 695px; width:110px; margin-left: 450px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f3" style="position: relative; top: 695px; width:110px; margin-left: 450px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Data-driven</h><br>
                 <h>services</h>
             </div>
 
-            <div style="position: relative; top: 648px; width:110px; margin-left: 158px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f4" style="position: relative; top: 648px; width:110px; margin-left: 158px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Level of</h><br>
                 <h>product data</h><br>
                 <h>usage</h>
             </div>
 
-            <div style="position: relative; top: 330px; width: 110px; margin-left: 35px; font-size: 19px; border: 2px solid black; text-align: center;">
+            <div id="f5" style="position: relative; top: 330px; width: 110px; margin-left: 35px; font-size: 19px; border: 2px solid black; text-align: center;">
                 <h>Share of</h></br>
                 <h>revenue</h>
             </div>
@@ -734,14 +824,33 @@
                 <div id="two51"></div>
                 <div id="three51"></div>
                 <div id="four51"></div>
+
+
+
             </div>
-       </div>     
+            <footer id="footer" style="margin-left: -740px; margin-top: -150px; margin-bottom: -90px;">
+                <div style="display: flex; justify-content: space-between; height: 40px; background-color: #bfbfbf;"><h3>MANTIX DIGITAL SOLUTIONS PVT LTD </h3>
+                    <p>© Copyright 2022| Mantix Digital Solutions Pvt Ltd</p>
+                </div>
+                <p>Reg Address: #201, 2nd Floor, SJB Sai Residency, Madinaguda, Hyderabad, Telangana -500050 INDIA.</p>
+                <!-- <div style="display: flex; text-align: ;"> -->
+                    <p style="margin-top: -15px;">Ph: +91-9573212699 | <span>Email: </span><a href="contact@matixdigital.com"> contact@matixdigital.com</a> | <span> Web: </span><a href="www.mantixdigital.com">www.mantixdigital.com</a></p>
+                <!-- </div> -->
+            </footer>
+       </div> 
+ 
+  
 </body>
 
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
 <!-- <script src="/4.0-Assesment/script.js"></script> -->
+
+
 </html>
+
+
 
 <script>
 
